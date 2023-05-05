@@ -64,6 +64,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="/user/hjang8659//proxy/absolute/8000/sales-of-cigarette-each-state.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Analysis of Relationship Between Sales and Income Data" href="Second.html" />
+    <link rel="prev" title="Analysis of Tobacco sales across States in the US" href="main.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -129,7 +131,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="main.html">
   
   
   
@@ -149,15 +151,14 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                <a class="reference internal" href="main.html">
+                    Analysis of Tobacco sales across States in the US
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sales of cigarette packs per capita in different states per year from 2013 to 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Second.html">Analysis of Relationship Between Sales and Income Data</a></li>
 </ul>
 
     </div>
@@ -424,29 +425,24 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">states</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;LocationAbbr&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">states</span><span class="p">:</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df_2</span><span class="p">[</span><span class="n">df_2</span><span class="p">[</span><span class="s1">&#39;LocationAbbr&#39;</span><span class="p">]</span> <span class="o">==</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;YearStart&#39;</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df_2</span><span class="p">[</span><span class="n">df_2</span><span class="p">[</span><span class="s1">&#39;LocationAbbr&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">][</span><span class="s1">&#39;DataValue&#39;</span><span class="p">]))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df_2</span><span class="p">[</span><span class="n">df_2</span><span class="p">[</span><span class="s1">&#39;LocationAbbr&#39;</span><span class="p">]</span> <span class="o">==</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;YearStart&#39;</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df_2</span><span class="p">[</span><span class="n">df_2</span><span class="p">[</span><span class="s1">&#39;LocationAbbr&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">][</span><span class="s1">&#39;DataValue&#39;</span><span class="p">]),</span><span class="n">marker</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Cigarette sales per capita in each state&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;year&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;sales per capita&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;YearStart&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;output/sales-of-cigarette-each-state.png&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;sales per capita&#39;)
-</pre></div>
-</div>
-<img alt="_images/920cfbf2e412b7aa4cd8b852801b5a77102c4ef5c3f939e2445b3bc624d8ec8c.png" src="_images/920cfbf2e412b7aa4cd8b852801b5a77102c4ef5c3f939e2445b3bc624d8ec8c.png" />
+<img alt="_images/73903fac8df7957d04eb88aca4f46937ad5dbf9068fcf6fcfa11ecfa0a4ffcbf.png" src="_images/73903fac8df7957d04eb88aca4f46937ad5dbf9068fcf6fcfa11ecfa0a4ffcbf.png" />
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">year</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;YearStart&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
-<span class="n">year</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([2013, 2014, 2016, 2017, 2018, 2019])
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import seaborn as sns</span>
+<span class="c1">#sns.lineplot(data=df_flt, x=&#39;YearStart&#39;, y=&#39;DataValue&#39;, hue=&#39;LocationAbbr&#39;, markers=True)</span>
 </pre></div>
 </div>
 </div>
@@ -485,6 +481,24 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="main.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Analysis of Tobacco sales across States in the US</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Second.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Analysis of Relationship Between Sales and Income Data</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
