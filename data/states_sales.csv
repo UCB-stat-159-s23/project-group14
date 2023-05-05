@@ -1,52 +1,307 @@
-LocationDesc,LocationAbbr,DataValueUnit,2013,2014,2016,2017,2018,2019
-Alabama,AL,pack sales per capita,64.6,61.7,60.1,58.1,54.7,53.1
-Alaska,AK,pack sales per capita,39,37.2,35.6,32.9,31.1,30.4
-Arizona,AZ,pack sales per capita,24.4,23,23.1,22.5,21.8,20.7
-Arkansas,AR,pack sales per capita,57.5,54.4,54.2,52.4,50.2,47.6
-California,CA,pack sales per capita,23.9,22.7,22,20.5,16.6,15.8
-Colorado,CO,pack sales per capita,38.3,36.7,35.8,34.5,32.1,30.4
-Connecticut,CT,pack sales per capita,31.4,30.1,28.3,26.5,23.8,21.9
-Delaware,DE,pack sales per capita,77.1,71.2,68.1,72.6,64.2,56.9
-District of Columbia,DC,pack sales per capita,18.6,16.2,14.8,13.2,12.9,9.1
-Florida,FL,pack sales per capita,44.3,42.4,41.5,40.6,38.4,36.2
-Georgia,GA,pack sales per capita,49.9,49,47.3,45.6,45.7,43.3
-Hawaii,HI,pack sales per capita,27,25.4,25.4,25.1,24.2,22.5
-Idaho,ID,pack sales per capita,43.1,40.8,40.7,39,37.7,35.8
-Illinois,IL,pack sales per capita,31.7,33.6,31.5,30.7,28.3,29.3
-Indiana,IN,pack sales per capita,66.9,63.6,62.4,61.2,58.3,56.5
-Iowa,IA,pack sales per capita,48.5,47.1,47.7,45,43,41.6
-Kansas,KS,pack sales per capita,41,39.5,36.4,34.5,33.3,31.1
-Kentucky,KY,pack sales per capita,93.5,89,87,85.6,81.6,73.3
-Louisiana,LA,pack sales per capita,73.3,65.1,55.9,57.6,53.6,50.8
-Maine,ME,pack sales per capita,48.5,47.4,48.9,49.6,45.4,42.6
-Maryland,MD,pack sales per capita,32.6,31.6,30.4,29.2,27.6,26.4
-Massachusetts,MA,pack sales per capita,32.2,27.1,25.6,24.3,23,21.3
-Michigan,MI,pack sales per capita,45.4,44.5,44.9,44.4,42.5,41.3
-Minnesota,MN,pack sales per capita,43.1,31.4,29.8,28.3,26.2,24.6
-Mississippi,MS,pack sales per capita,63.9,61.2,59.2,59.4,56.3,53.8
-Missouri,MO,pack sales per capita,87.4,82.6,83.4,79.5,75.3,72.2
-Montana,MT,pack sales per capita,44.3,43,42.2,41.1,37.2,36.4
-Nebraska,NE,pack sales per capita,51.2,47.3,46.3,43.4,43.4,40.6
-Nevada,NV,pack sales per capita,43.2,41.6,30.9,36.3,31.6,32
-New Hampshire,NH,pack sales per capita,89.6,90.6,91.5,87.3,83.4,78.4
-New Jersey,NJ,pack sales per capita,30.6,29.3,28.1,27.3,25.8,24.1
-New Mexico,NM,pack sales per capita,26.4,24.6,24.6,24,23.6,22.6
-New York,NY,pack sales per capita,16.6,15.4,14,13.3,12.5,11.7
-North Carolina,NC,pack sales per capita,57.5,56.7,54.4,54.5,53.2,51.6
-North Dakota,ND,pack sales per capita,72.5,75.8,70.2,65.2,62.8,59.9
-Ohio,OH,pack sales per capita,54.6,53.3,50.8,50.1,47.6,45.7
-Oklahoma,OK,pack sales per capita,67.2,64.3,61.2,60.5,58.1,42.8
-Oregon,OR,pack sales per capita,43.3,41.4,40,38.3,37.2,35
-Pennsylvania,PA,pack sales per capita,52.8,50.8,48.2,40.5,37.8,35.7
-Rhode Island,RI,pack sales per capita,35.3,36.7,35.2,34.2,31.4,29.1
-South Carolina,SC,pack sales per capita,62,58.9,57.3,55.5,53.1,52.6
-South Dakota,SD,pack sales per capita,42.7,42.3,44.6,41.6,40.2,35
-Tennessee,TN,pack sales per capita,66.2,62.6,61.6,59.2,56,55.5
-Texas,TX,pack sales per capita,36.2,33.7,32.8,31.9,29.1,28.8
-Utah,UT,pack sales per capita,21.4,19.5,18.5,18.4,17.1,15.9
-Vermont,VT,pack sales per capita,42.1,40.4,37.4,36.3,32.8,31.5
-Virginia,VA,pack sales per capita,69.4,67,63.6,60.8,55.7,51.6
-Washington,WA,pack sales per capita,19.5,18.6,18,17,16.1,15
-West Virginia,WV,pack sales per capita,103.1,97.4,95.5,82.2,75.7,75
-Wisconsin,WI,pack sales per capita,39.8,39.9,39.7,39,37.2,35.4
-Wyoming,WY,pack sales per capita,60.8,56.4,54.6,52.4,50.4,49.4
+,YearStart,LocationDesc,LocationAbbr,Question,DataValueUnit,DataValue
+0,2013,Alabama,AL,Sale of cigarette packs,pack sales per capita,64.6
+1,2013,Alaska,AK,Sale of cigarette packs,pack sales per capita,39
+2,2013,Arizona,AZ,Sale of cigarette packs,pack sales per capita,24.4
+3,2013,Arkansas,AR,Sale of cigarette packs,pack sales per capita,57.5
+4,2013,California,CA,Sale of cigarette packs,pack sales per capita,23.9
+5,2013,Colorado,CO,Sale of cigarette packs,pack sales per capita,38.3
+6,2013,Connecticut,CT,Sale of cigarette packs,pack sales per capita,31.4
+7,2013,Delaware,DE,Sale of cigarette packs,pack sales per capita,77.1
+8,2013,District of Columbia,DC,Sale of cigarette packs,pack sales per capita,18.6
+9,2013,Florida,FL,Sale of cigarette packs,pack sales per capita,44.3
+10,2013,Georgia,GA,Sale of cigarette packs,pack sales per capita,49.9
+12,2013,Hawaii,HI,Sale of cigarette packs,pack sales per capita,27
+13,2013,Idaho,ID,Sale of cigarette packs,pack sales per capita,43.1
+14,2013,Illinois,IL,Sale of cigarette packs,pack sales per capita,31.7
+15,2013,Indiana,IN,Sale of cigarette packs,pack sales per capita,66.9
+16,2013,Iowa,IA,Sale of cigarette packs,pack sales per capita,48.5
+17,2013,Kansas,KS,Sale of cigarette packs,pack sales per capita,41
+18,2013,Kentucky,KY,Sale of cigarette packs,pack sales per capita,93.5
+19,2013,Louisiana,LA,Sale of cigarette packs,pack sales per capita,73.3
+20,2013,Maine,ME,Sale of cigarette packs,pack sales per capita,48.5
+21,2013,Maryland,MD,Sale of cigarette packs,pack sales per capita,32.6
+22,2013,Massachusetts,MA,Sale of cigarette packs,pack sales per capita,32.2
+23,2013,Michigan,MI,Sale of cigarette packs,pack sales per capita,45.4
+24,2013,Minnesota,MN,Sale of cigarette packs,pack sales per capita,43.1
+25,2013,Mississippi,MS,Sale of cigarette packs,pack sales per capita,63.9
+26,2013,Missouri,MO,Sale of cigarette packs,pack sales per capita,87.4
+27,2013,Montana,MT,Sale of cigarette packs,pack sales per capita,44.3
+28,2013,Nebraska,NE,Sale of cigarette packs,pack sales per capita,51.2
+29,2013,Nevada,NV,Sale of cigarette packs,pack sales per capita,43.2
+30,2013,New Hampshire,NH,Sale of cigarette packs,pack sales per capita,89.6
+31,2013,New Jersey,NJ,Sale of cigarette packs,pack sales per capita,30.6
+32,2013,New Mexico,NM,Sale of cigarette packs,pack sales per capita,26.4
+33,2013,New York,NY,Sale of cigarette packs,pack sales per capita,16.6
+34,2013,North Carolina,NC,Sale of cigarette packs,pack sales per capita,57.5
+35,2013,North Dakota,ND,Sale of cigarette packs,pack sales per capita,72.5
+36,2013,Ohio,OH,Sale of cigarette packs,pack sales per capita,54.6
+37,2013,Oklahoma,OK,Sale of cigarette packs,pack sales per capita,67.2
+38,2013,Oregon,OR,Sale of cigarette packs,pack sales per capita,43.3
+39,2013,Pennsylvania,PA,Sale of cigarette packs,pack sales per capita,52.8
+41,2013,Rhode Island,RI,Sale of cigarette packs,pack sales per capita,35.3
+42,2013,South Carolina,SC,Sale of cigarette packs,pack sales per capita,62
+43,2013,South Dakota,SD,Sale of cigarette packs,pack sales per capita,42.7
+44,2013,Tennessee,TN,Sale of cigarette packs,pack sales per capita,66.2
+45,2013,Texas,TX,Sale of cigarette packs,pack sales per capita,36.2
+47,2013,Utah,UT,Sale of cigarette packs,pack sales per capita,21.4
+48,2013,Vermont,VT,Sale of cigarette packs,pack sales per capita,42.1
+50,2013,Virginia,VA,Sale of cigarette packs,pack sales per capita,69.4
+51,2013,Washington,WA,Sale of cigarette packs,pack sales per capita,19.5
+52,2013,West Virginia,WV,Sale of cigarette packs,pack sales per capita,103.1
+53,2013,Wisconsin,WI,Sale of cigarette packs,pack sales per capita,39.8
+54,2013,Wyoming,WY,Sale of cigarette packs,pack sales per capita,60.8
+55,2014,Alabama,AL,Sale of cigarette packs,pack sales per capita,61.7
+56,2014,Alaska,AK,Sale of cigarette packs,pack sales per capita,37.2
+57,2014,Arizona,AZ,Sale of cigarette packs,pack sales per capita,23
+58,2014,Arkansas,AR,Sale of cigarette packs,pack sales per capita,54.4
+59,2014,California,CA,Sale of cigarette packs,pack sales per capita,22.7
+60,2014,Colorado,CO,Sale of cigarette packs,pack sales per capita,36.7
+61,2014,Connecticut,CT,Sale of cigarette packs,pack sales per capita,30.1
+62,2014,Delaware,DE,Sale of cigarette packs,pack sales per capita,71.2
+63,2014,District of Columbia,DC,Sale of cigarette packs,pack sales per capita,16.2
+64,2014,Florida,FL,Sale of cigarette packs,pack sales per capita,42.4
+65,2014,Georgia,GA,Sale of cigarette packs,pack sales per capita,49
+67,2014,Hawaii,HI,Sale of cigarette packs,pack sales per capita,25.4
+68,2014,Idaho,ID,Sale of cigarette packs,pack sales per capita,40.8
+69,2014,Illinois,IL,Sale of cigarette packs,pack sales per capita,33.6
+70,2014,Indiana,IN,Sale of cigarette packs,pack sales per capita,63.6
+71,2014,Iowa,IA,Sale of cigarette packs,pack sales per capita,47.1
+72,2014,Kansas,KS,Sale of cigarette packs,pack sales per capita,39.5
+73,2014,Kentucky,KY,Sale of cigarette packs,pack sales per capita,89
+74,2014,Louisiana,LA,Sale of cigarette packs,pack sales per capita,65.1
+75,2014,Maine,ME,Sale of cigarette packs,pack sales per capita,47.4
+76,2014,Maryland,MD,Sale of cigarette packs,pack sales per capita,31.6
+77,2014,Massachusetts,MA,Sale of cigarette packs,pack sales per capita,27.1
+78,2014,Michigan,MI,Sale of cigarette packs,pack sales per capita,44.5
+79,2014,Minnesota,MN,Sale of cigarette packs,pack sales per capita,31.4
+80,2014,Mississippi,MS,Sale of cigarette packs,pack sales per capita,61.2
+81,2014,Missouri,MO,Sale of cigarette packs,pack sales per capita,82.6
+82,2014,Montana,MT,Sale of cigarette packs,pack sales per capita,43
+83,2014,Nebraska,NE,Sale of cigarette packs,pack sales per capita,47.3
+84,2014,Nevada,NV,Sale of cigarette packs,pack sales per capita,41.6
+85,2014,New Hampshire,NH,Sale of cigarette packs,pack sales per capita,90.6
+86,2014,New Jersey,NJ,Sale of cigarette packs,pack sales per capita,29.3
+87,2014,New Mexico,NM,Sale of cigarette packs,pack sales per capita,24.6
+88,2014,New York,NY,Sale of cigarette packs,pack sales per capita,15.4
+89,2014,North Carolina,NC,Sale of cigarette packs,pack sales per capita,56.7
+90,2014,North Dakota,ND,Sale of cigarette packs,pack sales per capita,75.8
+91,2014,Ohio,OH,Sale of cigarette packs,pack sales per capita,53.3
+92,2014,Oklahoma,OK,Sale of cigarette packs,pack sales per capita,64.3
+93,2014,Oregon,OR,Sale of cigarette packs,pack sales per capita,41.4
+94,2014,Pennsylvania,PA,Sale of cigarette packs,pack sales per capita,50.8
+96,2014,Rhode Island,RI,Sale of cigarette packs,pack sales per capita,36.7
+97,2014,South Carolina,SC,Sale of cigarette packs,pack sales per capita,58.9
+98,2014,South Dakota,SD,Sale of cigarette packs,pack sales per capita,42.3
+99,2014,Tennessee,TN,Sale of cigarette packs,pack sales per capita,62.6
+100,2014,Texas,TX,Sale of cigarette packs,pack sales per capita,33.7
+102,2014,Utah,UT,Sale of cigarette packs,pack sales per capita,19.5
+103,2014,Vermont,VT,Sale of cigarette packs,pack sales per capita,40.4
+105,2014,Virginia,VA,Sale of cigarette packs,pack sales per capita,67
+106,2014,Washington,WA,Sale of cigarette packs,pack sales per capita,18.6
+107,2014,West Virginia,WV,Sale of cigarette packs,pack sales per capita,97.4
+108,2014,Wisconsin,WI,Sale of cigarette packs,pack sales per capita,39.9
+109,2014,Wyoming,WY,Sale of cigarette packs,pack sales per capita,56.4
+110,2016,Alabama,AL,Sale of cigarette packs,pack sales per capita,60.1
+111,2016,Alaska,AK,Sale of cigarette packs,pack sales per capita,35.6
+112,2016,Arizona,AZ,Sale of cigarette packs,pack sales per capita,23.1
+113,2016,Arkansas,AR,Sale of cigarette packs,pack sales per capita,54.2
+114,2016,California,CA,Sale of cigarette packs,pack sales per capita,22
+115,2016,Colorado,CO,Sale of cigarette packs,pack sales per capita,35.8
+116,2016,Connecticut,CT,Sale of cigarette packs,pack sales per capita,28.3
+117,2016,Delaware,DE,Sale of cigarette packs,pack sales per capita,68.1
+118,2016,District of Columbia,DC,Sale of cigarette packs,pack sales per capita,14.8
+119,2016,Florida,FL,Sale of cigarette packs,pack sales per capita,41.5
+120,2016,Georgia,GA,Sale of cigarette packs,pack sales per capita,47.3
+122,2016,Hawaii,HI,Sale of cigarette packs,pack sales per capita,25.4
+123,2016,Idaho,ID,Sale of cigarette packs,pack sales per capita,40.7
+124,2016,Illinois,IL,Sale of cigarette packs,pack sales per capita,31.5
+125,2016,Indiana,IN,Sale of cigarette packs,pack sales per capita,62.4
+126,2016,Iowa,IA,Sale of cigarette packs,pack sales per capita,47.7
+127,2016,Kansas,KS,Sale of cigarette packs,pack sales per capita,36.4
+128,2016,Kentucky,KY,Sale of cigarette packs,pack sales per capita,87
+129,2016,Louisiana,LA,Sale of cigarette packs,pack sales per capita,55.9
+130,2016,Maine,ME,Sale of cigarette packs,pack sales per capita,48.9
+131,2016,Maryland,MD,Sale of cigarette packs,pack sales per capita,30.4
+132,2016,Massachusetts,MA,Sale of cigarette packs,pack sales per capita,25.6
+133,2016,Michigan,MI,Sale of cigarette packs,pack sales per capita,44.9
+134,2016,Minnesota,MN,Sale of cigarette packs,pack sales per capita,29.8
+135,2016,Mississippi,MS,Sale of cigarette packs,pack sales per capita,59.2
+136,2016,Missouri,MO,Sale of cigarette packs,pack sales per capita,83.4
+137,2016,Montana,MT,Sale of cigarette packs,pack sales per capita,42.2
+138,2016,Nebraska,NE,Sale of cigarette packs,pack sales per capita,46.3
+139,2016,Nevada,NV,Sale of cigarette packs,pack sales per capita,30.9
+140,2016,New Hampshire,NH,Sale of cigarette packs,pack sales per capita,91.5
+141,2016,New Jersey,NJ,Sale of cigarette packs,pack sales per capita,28.1
+142,2016,New Mexico,NM,Sale of cigarette packs,pack sales per capita,24.6
+143,2016,New York,NY,Sale of cigarette packs,pack sales per capita,14
+144,2016,North Carolina,NC,Sale of cigarette packs,pack sales per capita,54.4
+145,2016,North Dakota,ND,Sale of cigarette packs,pack sales per capita,70.2
+146,2016,Ohio,OH,Sale of cigarette packs,pack sales per capita,50.8
+147,2016,Oklahoma,OK,Sale of cigarette packs,pack sales per capita,61.2
+148,2016,Oregon,OR,Sale of cigarette packs,pack sales per capita,40
+149,2016,Pennsylvania,PA,Sale of cigarette packs,pack sales per capita,48.2
+151,2016,Rhode Island,RI,Sale of cigarette packs,pack sales per capita,35.2
+152,2016,South Carolina,SC,Sale of cigarette packs,pack sales per capita,57.3
+153,2016,South Dakota,SD,Sale of cigarette packs,pack sales per capita,44.6
+154,2016,Tennessee,TN,Sale of cigarette packs,pack sales per capita,61.6
+155,2016,Texas,TX,Sale of cigarette packs,pack sales per capita,32.8
+157,2016,Utah,UT,Sale of cigarette packs,pack sales per capita,18.5
+158,2016,Vermont,VT,Sale of cigarette packs,pack sales per capita,37.4
+160,2016,Virginia,VA,Sale of cigarette packs,pack sales per capita,63.6
+161,2016,Washington,WA,Sale of cigarette packs,pack sales per capita,18
+162,2016,West Virginia,WV,Sale of cigarette packs,pack sales per capita,95.5
+163,2016,Wisconsin,WI,Sale of cigarette packs,pack sales per capita,39.7
+164,2016,Wyoming,WY,Sale of cigarette packs,pack sales per capita,54.6
+165,2017,Alabama,AL,Sale of cigarette packs,pack sales per capita,58.1
+166,2017,Alaska,AK,Sale of cigarette packs,pack sales per capita,32.9
+167,2017,Arizona,AZ,Sale of cigarette packs,pack sales per capita,22.5
+168,2017,Arkansas,AR,Sale of cigarette packs,pack sales per capita,52.4
+169,2017,California,CA,Sale of cigarette packs,pack sales per capita,20.5
+170,2017,Colorado,CO,Sale of cigarette packs,pack sales per capita,34.5
+171,2017,Connecticut,CT,Sale of cigarette packs,pack sales per capita,26.5
+172,2017,Delaware,DE,Sale of cigarette packs,pack sales per capita,72.6
+173,2017,District of Columbia,DC,Sale of cigarette packs,pack sales per capita,13.2
+174,2017,Florida,FL,Sale of cigarette packs,pack sales per capita,40.6
+175,2017,Georgia,GA,Sale of cigarette packs,pack sales per capita,45.6
+177,2017,Hawaii,HI,Sale of cigarette packs,pack sales per capita,25.1
+178,2017,Idaho,ID,Sale of cigarette packs,pack sales per capita,39
+179,2017,Illinois,IL,Sale of cigarette packs,pack sales per capita,30.7
+180,2017,Indiana,IN,Sale of cigarette packs,pack sales per capita,61.2
+181,2017,Iowa,IA,Sale of cigarette packs,pack sales per capita,45
+182,2017,Kansas,KS,Sale of cigarette packs,pack sales per capita,34.5
+183,2017,Kentucky,KY,Sale of cigarette packs,pack sales per capita,85.6
+184,2017,Louisiana,LA,Sale of cigarette packs,pack sales per capita,57.6
+185,2017,Maine,ME,Sale of cigarette packs,pack sales per capita,49.6
+186,2017,Maryland,MD,Sale of cigarette packs,pack sales per capita,29.2
+187,2017,Massachusetts,MA,Sale of cigarette packs,pack sales per capita,24.3
+188,2017,Michigan,MI,Sale of cigarette packs,pack sales per capita,44.4
+189,2017,Minnesota,MN,Sale of cigarette packs,pack sales per capita,28.3
+190,2017,Mississippi,MS,Sale of cigarette packs,pack sales per capita,59.4
+191,2017,Missouri,MO,Sale of cigarette packs,pack sales per capita,79.5
+192,2017,Montana,MT,Sale of cigarette packs,pack sales per capita,41.1
+193,2017,Nebraska,NE,Sale of cigarette packs,pack sales per capita,43.4
+194,2017,Nevada,NV,Sale of cigarette packs,pack sales per capita,36.3
+195,2017,New Hampshire,NH,Sale of cigarette packs,pack sales per capita,87.3
+196,2017,New Jersey,NJ,Sale of cigarette packs,pack sales per capita,27.3
+197,2017,New Mexico,NM,Sale of cigarette packs,pack sales per capita,24
+198,2017,New York,NY,Sale of cigarette packs,pack sales per capita,13.3
+199,2017,North Carolina,NC,Sale of cigarette packs,pack sales per capita,54.5
+200,2017,North Dakota,ND,Sale of cigarette packs,pack sales per capita,65.2
+201,2017,Ohio,OH,Sale of cigarette packs,pack sales per capita,50.1
+202,2017,Oklahoma,OK,Sale of cigarette packs,pack sales per capita,60.5
+203,2017,Oregon,OR,Sale of cigarette packs,pack sales per capita,38.3
+204,2017,Pennsylvania,PA,Sale of cigarette packs,pack sales per capita,40.5
+206,2017,Rhode Island,RI,Sale of cigarette packs,pack sales per capita,34.2
+207,2017,South Carolina,SC,Sale of cigarette packs,pack sales per capita,55.5
+208,2017,South Dakota,SD,Sale of cigarette packs,pack sales per capita,41.6
+209,2017,Tennessee,TN,Sale of cigarette packs,pack sales per capita,59.2
+210,2017,Texas,TX,Sale of cigarette packs,pack sales per capita,31.9
+212,2017,Utah,UT,Sale of cigarette packs,pack sales per capita,18.4
+213,2017,Vermont,VT,Sale of cigarette packs,pack sales per capita,36.3
+215,2017,Virginia,VA,Sale of cigarette packs,pack sales per capita,60.8
+216,2017,Washington,WA,Sale of cigarette packs,pack sales per capita,17
+217,2017,West Virginia,WV,Sale of cigarette packs,pack sales per capita,82.2
+218,2017,Wisconsin,WI,Sale of cigarette packs,pack sales per capita,39
+219,2017,Wyoming,WY,Sale of cigarette packs,pack sales per capita,52.4
+220,2018,Alabama,AL,Sale of cigarette packs,pack sales per capita,54.7
+221,2018,Alaska,AK,Sale of cigarette packs,pack sales per capita,31.1
+222,2018,Arizona,AZ,Sale of cigarette packs,pack sales per capita,21.8
+223,2018,Arkansas,AR,Sale of cigarette packs,pack sales per capita,50.2
+224,2018,California,CA,Sale of cigarette packs,pack sales per capita,16.6
+225,2018,Colorado,CO,Sale of cigarette packs,pack sales per capita,32.1
+226,2018,Connecticut,CT,Sale of cigarette packs,pack sales per capita,23.8
+227,2018,Delaware,DE,Sale of cigarette packs,pack sales per capita,64.2
+228,2018,District of Columbia,DC,Sale of cigarette packs,pack sales per capita,12.9
+229,2018,Florida,FL,Sale of cigarette packs,pack sales per capita,38.4
+230,2018,Georgia,GA,Sale of cigarette packs,pack sales per capita,45.7
+232,2018,Hawaii,HI,Sale of cigarette packs,pack sales per capita,24.2
+233,2018,Idaho,ID,Sale of cigarette packs,pack sales per capita,37.7
+234,2018,Illinois,IL,Sale of cigarette packs,pack sales per capita,28.3
+235,2018,Indiana,IN,Sale of cigarette packs,pack sales per capita,58.3
+236,2018,Iowa,IA,Sale of cigarette packs,pack sales per capita,43
+237,2018,Kansas,KS,Sale of cigarette packs,pack sales per capita,33.3
+238,2018,Kentucky,KY,Sale of cigarette packs,pack sales per capita,81.6
+239,2018,Louisiana,LA,Sale of cigarette packs,pack sales per capita,53.6
+240,2018,Maine,ME,Sale of cigarette packs,pack sales per capita,45.4
+241,2018,Maryland,MD,Sale of cigarette packs,pack sales per capita,27.6
+242,2018,Massachusetts,MA,Sale of cigarette packs,pack sales per capita,23
+243,2018,Michigan,MI,Sale of cigarette packs,pack sales per capita,42.5
+244,2018,Minnesota,MN,Sale of cigarette packs,pack sales per capita,26.2
+245,2018,Mississippi,MS,Sale of cigarette packs,pack sales per capita,56.3
+246,2018,Missouri,MO,Sale of cigarette packs,pack sales per capita,75.3
+247,2018,Montana,MT,Sale of cigarette packs,pack sales per capita,37.2
+248,2018,Nebraska,NE,Sale of cigarette packs,pack sales per capita,43.4
+249,2018,Nevada,NV,Sale of cigarette packs,pack sales per capita,31.6
+250,2018,New Hampshire,NH,Sale of cigarette packs,pack sales per capita,83.4
+251,2018,New Jersey,NJ,Sale of cigarette packs,pack sales per capita,25.8
+252,2018,New Mexico,NM,Sale of cigarette packs,pack sales per capita,23.6
+253,2018,New York,NY,Sale of cigarette packs,pack sales per capita,12.5
+254,2018,North Carolina,NC,Sale of cigarette packs,pack sales per capita,53.2
+255,2018,North Dakota,ND,Sale of cigarette packs,pack sales per capita,62.8
+256,2018,Ohio,OH,Sale of cigarette packs,pack sales per capita,47.6
+257,2018,Oklahoma,OK,Sale of cigarette packs,pack sales per capita,58.1
+258,2018,Oregon,OR,Sale of cigarette packs,pack sales per capita,37.2
+259,2018,Pennsylvania,PA,Sale of cigarette packs,pack sales per capita,37.8
+261,2018,Rhode Island,RI,Sale of cigarette packs,pack sales per capita,31.4
+262,2018,South Carolina,SC,Sale of cigarette packs,pack sales per capita,53.1
+263,2018,South Dakota,SD,Sale of cigarette packs,pack sales per capita,40.2
+264,2018,Tennessee,TN,Sale of cigarette packs,pack sales per capita,56
+265,2018,Texas,TX,Sale of cigarette packs,pack sales per capita,29.1
+267,2018,Utah,UT,Sale of cigarette packs,pack sales per capita,17.1
+268,2018,Vermont,VT,Sale of cigarette packs,pack sales per capita,32.8
+270,2018,Virginia,VA,Sale of cigarette packs,pack sales per capita,55.7
+271,2018,Washington,WA,Sale of cigarette packs,pack sales per capita,16.1
+272,2018,West Virginia,WV,Sale of cigarette packs,pack sales per capita,75.7
+273,2018,Wisconsin,WI,Sale of cigarette packs,pack sales per capita,37.2
+274,2018,Wyoming,WY,Sale of cigarette packs,pack sales per capita,50.4
+275,2019,Alabama,AL,Sale of cigarette packs,pack sales per capita,53.1
+276,2019,Alaska,AK,Sale of cigarette packs,pack sales per capita,30.4
+277,2019,Arizona,AZ,Sale of cigarette packs,pack sales per capita,20.7
+278,2019,Arkansas,AR,Sale of cigarette packs,pack sales per capita,47.6
+279,2019,California,CA,Sale of cigarette packs,pack sales per capita,15.8
+280,2019,Colorado,CO,Sale of cigarette packs,pack sales per capita,30.4
+281,2019,Connecticut,CT,Sale of cigarette packs,pack sales per capita,21.9
+282,2019,Delaware,DE,Sale of cigarette packs,pack sales per capita,56.9
+283,2019,District of Columbia,DC,Sale of cigarette packs,pack sales per capita,9.1
+284,2019,Florida,FL,Sale of cigarette packs,pack sales per capita,36.2
+285,2019,Georgia,GA,Sale of cigarette packs,pack sales per capita,43.3
+287,2019,Hawaii,HI,Sale of cigarette packs,pack sales per capita,22.5
+288,2019,Idaho,ID,Sale of cigarette packs,pack sales per capita,35.8
+289,2019,Illinois,IL,Sale of cigarette packs,pack sales per capita,29.3
+290,2019,Indiana,IN,Sale of cigarette packs,pack sales per capita,56.5
+291,2019,Iowa,IA,Sale of cigarette packs,pack sales per capita,41.6
+292,2019,Kansas,KS,Sale of cigarette packs,pack sales per capita,31.1
+293,2019,Kentucky,KY,Sale of cigarette packs,pack sales per capita,73.3
+294,2019,Louisiana,LA,Sale of cigarette packs,pack sales per capita,50.8
+295,2019,Maine,ME,Sale of cigarette packs,pack sales per capita,42.6
+296,2019,Maryland,MD,Sale of cigarette packs,pack sales per capita,26.4
+297,2019,Massachusetts,MA,Sale of cigarette packs,pack sales per capita,21.3
+298,2019,Michigan,MI,Sale of cigarette packs,pack sales per capita,41.3
+299,2019,Minnesota,MN,Sale of cigarette packs,pack sales per capita,24.6
+300,2019,Mississippi,MS,Sale of cigarette packs,pack sales per capita,53.8
+301,2019,Missouri,MO,Sale of cigarette packs,pack sales per capita,72.2
+302,2019,Montana,MT,Sale of cigarette packs,pack sales per capita,36.4
+303,2019,Nebraska,NE,Sale of cigarette packs,pack sales per capita,40.6
+304,2019,Nevada,NV,Sale of cigarette packs,pack sales per capita,32
+305,2019,New Hampshire,NH,Sale of cigarette packs,pack sales per capita,78.4
+306,2019,New Jersey,NJ,Sale of cigarette packs,pack sales per capita,24.1
+307,2019,New Mexico,NM,Sale of cigarette packs,pack sales per capita,22.6
+308,2019,New York,NY,Sale of cigarette packs,pack sales per capita,11.7
+309,2019,North Carolina,NC,Sale of cigarette packs,pack sales per capita,51.6
+310,2019,North Dakota,ND,Sale of cigarette packs,pack sales per capita,59.9
+311,2019,Ohio,OH,Sale of cigarette packs,pack sales per capita,45.7
+312,2019,Oklahoma,OK,Sale of cigarette packs,pack sales per capita,42.8
+313,2019,Oregon,OR,Sale of cigarette packs,pack sales per capita,35
+314,2019,Pennsylvania,PA,Sale of cigarette packs,pack sales per capita,35.7
+316,2019,Rhode Island,RI,Sale of cigarette packs,pack sales per capita,29.1
+317,2019,South Carolina,SC,Sale of cigarette packs,pack sales per capita,52.6
+318,2019,South Dakota,SD,Sale of cigarette packs,pack sales per capita,35
+319,2019,Tennessee,TN,Sale of cigarette packs,pack sales per capita,55.5
+320,2019,Texas,TX,Sale of cigarette packs,pack sales per capita,28.8
+322,2019,Utah,UT,Sale of cigarette packs,pack sales per capita,15.9
+323,2019,Vermont,VT,Sale of cigarette packs,pack sales per capita,31.5
+325,2019,Virginia,VA,Sale of cigarette packs,pack sales per capita,51.6
+326,2019,Washington,WA,Sale of cigarette packs,pack sales per capita,15
+327,2019,West Virginia,WV,Sale of cigarette packs,pack sales per capita,75
+328,2019,Wisconsin,WI,Sale of cigarette packs,pack sales per capita,35.4
+329,2019,Wyoming,WY,Sale of cigarette packs,pack sales per capita,49.4
