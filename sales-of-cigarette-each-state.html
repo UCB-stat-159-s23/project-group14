@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Sales of cigarette packs per capita in different states per year from 2013 to 2019 &#8212; My sample book</title>
+    <title>Sales of cigarette packs per capita in different states per year from 2013 to 2019 &#8212; Group 14 Final Project Analysis of Tobacco Sales</title>
   
   
   
@@ -44,6 +44,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
@@ -61,13 +62,12 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'sales-of-cigarette-each-state';</script>
-    <link rel="canonical" href="/user/hjang8659//proxy/absolute/8000/sales-of-cigarette-each-state.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Analysis of Relationship Between Sales and Income Data" href="Second.html" />
     <link rel="prev" title="Analysis of Tobacco sales across States in the US" href="main.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -213,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/UCB-stat-159-s23/project-group14" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -230,7 +230,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsales-of-cigarette-each-state.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/UCB-stat-159-s23/project-group14/issues/new?title=Issue%20on%20page%20%2Fsales-of-cigarette-each-state.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -355,12 +355,24 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="sales-of-cigarette-packs-per-capita-in-different-states-per-year-from-2013-to-2019">
-<h1>Sales of cigarette packs per capita in different states per year from 2013 to 2019<a class="headerlink" href="#sales-of-cigarette-packs-per-capita-in-different-states-per-year-from-2013-to-2019" title="Permalink to this headline">#</a></h1>
+<h1>Sales of cigarette packs per capita in different states per year from 2013 to 2019<a class="headerlink" href="#sales-of-cigarette-packs-per-capita-in-different-states-per-year-from-2013-to-2019" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
 </pre></div>
 </div>
 </div>
@@ -518,7 +530,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By Jiangyue Chen, Zilin Zhang, Daniel Jang, Isabel Adelhardt
 </p>
 
   </div>
