@@ -8,7 +8,7 @@ logo: logo.png
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: "off"
+  execute_notebooks: force
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -20,12 +20,12 @@ bibtex_bibfiles:
   - references.bib
   
 # The URL for BinderHub 
-launch_buttons:
-  binderhub_url: https://mybinder.org/v2/gh/UCB-stat-159-s23/hw04-Group14/HEAD?labpath=main.ipynb
+# launch_buttons:
+#   binderhub_url: https://mybinder.org/v2/gh/UCB-stat-159-s23/hw04-Group14/HEAD?labpath=main.ipynb
 
 # Information about where the book exists on the web
 repository:
-  url: https://ucb-stat-159-s23.github.io/project-group14  # Online location of your book
+  url: https://github.com/UCB-stat-159-s23/project-group14  # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
 
@@ -34,4 +34,4 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-  use_binderhub_button: true
+  # use_binderhub_button: true
