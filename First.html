@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Sales of cigarette packs per capita in different states per year from 2013 to 2019 &#8212; My sample book</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
@@ -61,13 +62,10 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'First';</script>
-    <link rel="canonical" href="/user/hjang8659//proxy/absolute/8000/First.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Analysis of Relationship Between Sales and Income Data" href="Second.html" />
-    <link rel="prev" title="Analysis of Tobacco sales across States in the US" href="main.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -156,10 +154,10 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="main.html">Analysis of Tobacco sales across States in the US</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sales of cigarette packs per capita in different states per year from 2013 to 2019</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Second.html">Analysis of Relationship Between Sales and Income Data</a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -356,12 +354,24 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="sales-of-cigarette-packs-per-capita-in-different-states-per-year-from-2013-to-2019">
-<h1>Sales of cigarette packs per capita in different states per year from 2013 to 2019<a class="headerlink" href="#sales-of-cigarette-packs-per-capita-in-different-states-per-year-from-2013-to-2019" title="Permalink to this headline">#</a></h1>
+<h1>Sales of cigarette packs per capita in different states per year from 2013 to 2019<a class="headerlink" href="#sales-of-cigarette-packs-per-capita-in-different-states-per-year-from-2013-to-2019" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
 </pre></div>
 </div>
 </div>
@@ -412,10 +422,11 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;AL&#39;, &#39;AK&#39;, &#39;AZ&#39;, &#39;AR&#39;, &#39;CA&#39;, &#39;CO&#39;, &#39;CT&#39;, &#39;DE&#39;, &#39;DC&#39;, &#39;FL&#39;, &#39;GA&#39;,
-       &#39;HI&#39;, &#39;ID&#39;, &#39;IL&#39;, &#39;IN&#39;, &#39;IA&#39;, &#39;KS&#39;, &#39;KY&#39;, &#39;LA&#39;, &#39;ME&#39;, &#39;MD&#39;, &#39;MA&#39;,
-       &#39;MI&#39;, &#39;MN&#39;, &#39;MS&#39;, &#39;MO&#39;, &#39;MT&#39;, &#39;NE&#39;, &#39;NV&#39;, &#39;NH&#39;, &#39;NJ&#39;, &#39;NM&#39;, &#39;NY&#39;,
-       &#39;NC&#39;, &#39;ND&#39;, &#39;OH&#39;, &#39;OK&#39;, &#39;OR&#39;, &#39;PA&#39;, &#39;RI&#39;, &#39;SC&#39;, &#39;SD&#39;, &#39;TN&#39;, &#39;TX&#39;,
-       &#39;UT&#39;, &#39;VT&#39;, &#39;VA&#39;, &#39;WA&#39;, &#39;WV&#39;, &#39;WI&#39;, &#39;WY&#39;], dtype=object)
+       &#39;GU&#39;, &#39;HI&#39;, &#39;ID&#39;, &#39;IL&#39;, &#39;IN&#39;, &#39;IA&#39;, &#39;KS&#39;, &#39;KY&#39;, &#39;LA&#39;, &#39;ME&#39;, &#39;MD&#39;,
+       &#39;MA&#39;, &#39;MI&#39;, &#39;MN&#39;, &#39;MS&#39;, &#39;MO&#39;, &#39;MT&#39;, &#39;NE&#39;, &#39;NV&#39;, &#39;NH&#39;, &#39;NJ&#39;, &#39;NM&#39;,
+       &#39;NY&#39;, &#39;NC&#39;, &#39;ND&#39;, &#39;OH&#39;, &#39;OK&#39;, &#39;OR&#39;, &#39;PA&#39;, &#39;PR&#39;, &#39;RI&#39;, &#39;SC&#39;, &#39;SD&#39;,
+       &#39;TN&#39;, &#39;TX&#39;, &#39;US&#39;, &#39;UT&#39;, &#39;VT&#39;, &#39;VI&#39;, &#39;VA&#39;, &#39;WA&#39;, &#39;WV&#39;, &#39;WI&#39;, &#39;WY&#39;],
+      dtype=object)
 </pre></div>
 </div>
 </div>
@@ -426,6 +437,91 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>YearStart</th>
+      <th>LocationDesc</th>
+      <th>LocationAbbr</th>
+      <th>Question</th>
+      <th>DataValueUnit</th>
+      <th>DataValue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2013</td>
+      <td>Alabama</td>
+      <td>AL</td>
+      <td>Sale of cigarette packs</td>
+      <td>pack sales per capita</td>
+      <td>64.6</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>2014</td>
+      <td>Alabama</td>
+      <td>AL</td>
+      <td>Sale of cigarette packs</td>
+      <td>pack sales per capita</td>
+      <td>61.7</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>2016</td>
+      <td>Alabama</td>
+      <td>AL</td>
+      <td>Sale of cigarette packs</td>
+      <td>pack sales per capita</td>
+      <td>60.1</td>
+    </tr>
+    <tr>
+      <th>165</th>
+      <td>2017</td>
+      <td>Alabama</td>
+      <td>AL</td>
+      <td>Sale of cigarette packs</td>
+      <td>pack sales per capita</td>
+      <td>58.1</td>
+    </tr>
+    <tr>
+      <th>220</th>
+      <td>2018</td>
+      <td>Alabama</td>
+      <td>AL</td>
+      <td>Sale of cigarette packs</td>
+      <td>pack sales per capita</td>
+      <td>54.7</td>
+    </tr>
+    <tr>
+      <th>275</th>
+      <td>2019</td>
+      <td>Alabama</td>
+      <td>AL</td>
+      <td>Sale of cigarette packs</td>
+      <td>pack sales per capita</td>
+      <td>53.1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -504,7 +600,12 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/744e449d364333c3692f45689c30a660b728dbfa5d0ec11f422b2e6b851d3ef9.png" src="_images/744e449d364333c3692f45689c30a660b728dbfa5d0ec11f422b2e6b851d3ef9.png" />
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>([&lt;matplotlib.axis.YTick at 0x7f1d21ab5fc0&gt;,
+  &lt;matplotlib.axis.YTick at 0x7f1d198ac0a0&gt;],
+ [Text(0, 242.0, &#39;10&#39;), Text(0, 243.0, &#39;100&#39;)])
+</pre></div>
+</div>
+<img alt="_images/0ffae4a4ddee41c653620f06a5579521e5269618de9baf3a0a5923e76226a7eb.png" src="_images/0ffae4a4ddee41c653620f06a5579521e5269618de9baf3a0a5923e76226a7eb.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -518,9 +619,6 @@ document.write(`
     <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">invert_yaxis</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/d1237fac65401d76451c5e40f64f478a0b5bac8f00ac91b4da9e1a13dbde6798.png" src="_images/d1237fac65401d76451c5e40f64f478a0b5bac8f00ac91b4da9e1a13dbde6798.png" />
 </div>
 </div>
 </section>
@@ -556,24 +654,6 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="main.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Analysis of Tobacco sales across States in the US</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="Second.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Analysis of Relationship Between Sales and Income Data</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div></div>
   
 </div>
