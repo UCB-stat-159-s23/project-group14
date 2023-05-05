@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Analysis of Tobacco sales across States in the US &#8212; My sample book</title>
   
@@ -44,7 +44,6 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
@@ -62,10 +61,12 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'main';</script>
+    <link rel="canonical" href="/user/hjang8659//proxy/absolute/8000/main.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Sales of cigarette packs per capita in different states per year from 2013 to 2019" href="sales-of-cigarette-each-state.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="None"/>
   </head>
   
   
@@ -129,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="#">
   
   
   
@@ -148,16 +149,15 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Analysis of Tobacco sales across States in the US
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sales-of-cigarette-each-state.html">Sales of cigarette packs per capita in different states per year from 2013 to 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Second.html">Analysis of Relationship Between Sales and Income Data</a></li>
 </ul>
 
     </div>
@@ -366,10 +366,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="analysis-of-tobacco-sales-across-states-in-the-us">
-<h1>Analysis of Tobacco sales across States in the US<a class="headerlink" href="#analysis-of-tobacco-sales-across-states-in-the-us" title="Permalink to this heading">#</a></h1>
+<h1>Analysis of Tobacco sales across States in the US<a class="headerlink" href="#analysis-of-tobacco-sales-across-states-in-the-us" title="Permalink to this headline">#</a></h1>
 <p>by Group 14 (Zilin Zhang, Jessica Chen, Daniel Jang, Isabel Adelhardt)</p>
 <section id="hypothesis-whether-median-income-per-state-has-an-impact-to-sales">
-<h2>hypothesis: Whether median income per state has an impact to sales<a class="headerlink" href="#hypothesis-whether-median-income-per-state-has-an-impact-to-sales" title="Permalink to this heading">#</a></h2>
+<h2>hypothesis: Whether median income per state has an impact to sales<a class="headerlink" href="#hypothesis-whether-median-income-per-state-has-an-impact-to-sales" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p>sales per year in each state from 2013 - 2019</p></li>
 <li><p>median income in each state per year from 2013 - 2019</p></li>
@@ -384,20 +384,10 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="step-1-sales-in-each-state-per-year-from-2013-2019">
-<h2>Step 1: sales in each state per year from 2013-2019<a class="headerlink" href="#step-1-sales-in-each-state-per-year-from-2013-2019" title="Permalink to this heading">#</a></h2>
+<h2>Step 1: sales in each state per year from 2013-2019<a class="headerlink" href="#step-1-sales-in-each-state-per-year-from-2013-2019" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sales_DATA</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/U.S._Chronic_Disease_Indicators__Tobacco.csv&quot;</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -550,7 +540,7 @@ document.write(`
 </div>
 </section>
 <section id="step-2-median-income-in-each-state-per-year-from-2013-2019">
-<h2>Step 2: Median income in each state per year from 2013 - 2019<a class="headerlink" href="#step-2-median-income-in-each-state-per-year-from-2013-2019" title="Permalink to this heading">#</a></h2>
+<h2>Step 2: Median income in each state per year from 2013 - 2019<a class="headerlink" href="#step-2-median-income-in-each-state-per-year-from-2013-2019" title="Permalink to this headline">#</a></h2>
 <p>Reading in median income data which is from Source: U.S. Bureau of the Census, Current Population Survey, Annual Social and Economic Supplements. For information on confidentiality protection, sampling error, nonsampling error, and definitions, see &lt;<a class="reference external" href="http://www2.census.gov/programs-surveys/cps/techdocs/cpsmar19.pdf">www2.census.gov/programs-surveys/cps/techdocs/cpsmar19.pdf</a>&gt;.</p>
 <p>We are using 2017 Median income instead of 2017(40) because 2017(40) represents data from a new data processing system. The 2017(40) data should be used for analysis of median income after 2017, but our analysis relates mostly to before 2017.</p>
 <p>We are using 2013(38) beause 2013(39) represents data from individuals who received new income questions. These new income questions were not used in the following years, so we are disregarding this data.</p>
@@ -840,6 +830,8 @@ document.write(`
 <li><p>average median income for each state from 2013 - 2019</p></li>
 </ul>
 </section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -873,6 +865,15 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="right-next"
+       href="sales-of-cigarette-each-state.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Sales of cigarette packs per capita in different states per year from 2013 to 2019</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
