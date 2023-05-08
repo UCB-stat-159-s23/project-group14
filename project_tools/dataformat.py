@@ -1,43 +1,23 @@
+import numpy as np
+from scipy.io import wavfile
+from scipy import signal
+from scipy.interpolate import interp1d
+from scipy.signal import butter, filtfilt, iirdesign, zpk2tf, freqz
+import h5py
+import json
+import matplotlib.pyplot as plt
+import matplotlib.mlab as mlab
 import warnings
-warnings.filterwarnings('ignore')
-
 import pandas as pd
 import numpy as np
+warnings.filterwarnings('ignore')
 
 
-def import_data(df):
-    """
-    
-    Input: Stored path variable
-    
-    Return: Dataframe
-    
-    """
-    
-    print("Generating dataframe")
-    return pd.read_csv('data/states_sales.csv')
+def tobacco_data_import(data):
+    data = pd.read_csv('data/U.S._Chronic_Disease_Indicators__Tobacco.csv', dtype='object')
+    return data
 
 
-
-def save_data(df):
-    """
-    
-    Save the data
-    
-    """
-    print("Saving data")
-    return data.to_csv(df index=True)
-
-
-
-def df_len(df):
-    """
-    
-    Input: Dataframe
-    
-    Return: Size (row and column) of the dataframe
-    
-    
-    """
-    print("Printing its size")
-    print("Row(s): ", df.shape[0], "Column(s): ", df.shape[0])
+def income_data_import(data):
+    data = pd.read_csv('data/median_income.csv')
+    return data

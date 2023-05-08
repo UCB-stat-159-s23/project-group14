@@ -2,9 +2,12 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: main
+root: intro.md
 
-chapters:
-- file: sales-of-cigarette-each-state
-- file: Second
-- file: Thrid
+parts:
+- caption: Analysis Notebook
+    chapters:
+    - file: main.ipynb
+    - file: sales-of-cigarette-each-state.ipynb
+    - file: Second.ipynb
+    - file: Thrid.ipynb
