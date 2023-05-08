@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Analysis of Tobacco sales across States in the US &#8212; Group 14 Final Project Analysis of Tobacco Sales</title>
+    <title>Analysis of the relationship between cigarette sales per capita and median income by States in the US &#8212; Group 14 Final Project Analysis of Tobacco Sales</title>
   
   
   
@@ -151,7 +151,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Analysis of Tobacco sales across States in the US
+                    Analysis of the relationship between cigarette sales per capita and median income by States in the US
                 </a>
             </li>
         </ul>
@@ -341,7 +341,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Analysis of Tobacco sales across States in the US</h1>
+    <h1>Analysis of the relationship between cigarette sales per capita and median income by States in the US</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -351,9 +351,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hypothesis-whether-median-income-per-state-has-an-impact-to-sales">hypothesis: Whether median income per state has an impact to sales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-sales-in-each-state-per-year-from-2013-2019">Step 1: sales in each state per year from 2013-2019</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-median-income-in-each-state-per-year-from-2013-2019">Step 2: Median income in each state per year from 2013 - 2019</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-of-project">Introduction of Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sources">Data sources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hypothesis-whether-median-income-per-state-has-an-impact-to-sales-of-cigarette-per-capita">Hypothesis: Whether median income per state has an impact to sales of cigarette per capita</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raw-data-preprocessing">Raw Data Preprocessing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exploratory-data-analysis">Exploratory Data Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-plot-and-analysis-the-trend-of-cigarette-sales-per-capita-in-each-state-in-the-u-s-per-year-from-2013-2019">Step 1: Plot and analysis the trend of cigarette sales per capita in each state in the U.S per year from 2013-2019</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-median-income-in-each-state-per-year-from-2013-2019">Step 2: Median income in each state per year from 2013 - 2019</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-regression">Step 3: Regression</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#author-contribution">Author Contribution</a></li>
 </ul>
             </nav>
         </div>
@@ -365,22 +374,32 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="analysis-of-tobacco-sales-across-states-in-the-us">
-<h1>Analysis of Tobacco sales across States in the US<a class="headerlink" href="#analysis-of-tobacco-sales-across-states-in-the-us" title="Permalink to this heading">#</a></h1>
-<p>by Group 14 (Zilin Zhang, Jessica Chen, Daniel Jang, Isabel Adelhardt)</p>
-<section id="hypothesis-whether-median-income-per-state-has-an-impact-to-sales">
-<h2>hypothesis: Whether median income per state has an impact to sales<a class="headerlink" href="#hypothesis-whether-median-income-per-state-has-an-impact-to-sales" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>sales per year in each state from 2013 - 2019</p></li>
-<li><p>median income in each state per year from 2013 - 2019</p></li>
-</ol>
-<p>2.1 if each state has a +/- difference in median income between years does this relate to the difference in sales</p>
-<ol class="arabic simple" start="3">
-<li><p>regression plots for sales and median income in each state per year</p></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="analysis-of-the-relationship-between-cigarette-sales-per-capita-and-median-income-by-states-in-the-us">
+<h1>Analysis of the relationship between cigarette sales per capita and median income by States in the US<a class="headerlink" href="#analysis-of-the-relationship-between-cigarette-sales-per-capita-and-median-income-by-states-in-the-us" title="Permalink to this heading">#</a></h1>
+<p>by Group 14 (Zilin Zhang, Jiangyue Chen, Daniel Jang, Isabel Adelhardt)</p>
+<section id="introduction-of-project">
+<h2>Introduction of Project<a class="headerlink" href="#introduction-of-project" title="Permalink to this heading">#</a></h2>
+<p>Introduction… + purpose of analysis (?)</p>
+</section>
+<section id="data-sources">
+<h2>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this heading">#</a></h2>
+<p>data sources
+(need to mention the missing 2015 sales data)</p>
+</section>
+<section id="hypothesis-whether-median-income-per-state-has-an-impact-to-sales-of-cigarette-per-capita">
+<h2>Hypothesis: Whether median income per state has an impact to sales of cigarette per capita<a class="headerlink" href="#hypothesis-whether-median-income-per-state-has-an-impact-to-sales-of-cigarette-per-capita" title="Permalink to this heading">#</a></h2>
+<p>In order to examine our assumption, we think the following data analysis are essential:</p>
+<ol class="arabic">
+<li><p>plot and analyze the changing trend of cigarette sales per capita in each states in the U.S. from 2013 to 2019</p></li>
+<li><p>plot and analyze the changing trend of median income in each states in the U.S. from 2013 to 2019</p>
+<p>· if each state has a +/- difference in median income between years does this relate to the difference in sales</p>
+</li>
+<li><p>regression plot for the sales data and median income in each state per year to figure out the relationship of two variables</p></li>
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 </pre></div>
 </div>
 </div>
@@ -389,6 +408,7 @@ document.write(`
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
 
 <span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
 </pre></div>
@@ -396,8 +416,9 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="step-1-sales-in-each-state-per-year-from-2013-2019">
-<h2>Step 1: sales in each state per year from 2013-2019<a class="headerlink" href="#step-1-sales-in-each-state-per-year-from-2013-2019" title="Permalink to this heading">#</a></h2>
+<section id="raw-data-preprocessing">
+<h2>Raw Data Preprocessing<a class="headerlink" href="#raw-data-preprocessing" title="Permalink to this heading">#</a></h2>
+<p>For the data we acquire from — about U.S. Chronic Disease Indicators</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sales_DATA</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/U.S._Chronic_Disease_Indicators__Tobacco.csv&quot;</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -549,8 +570,26 @@ document.write(`
 </div></div></div>
 </div>
 </section>
+<section id="exploratory-data-analysis">
+<h2>Exploratory Data Analysis<a class="headerlink" href="#exploratory-data-analysis" title="Permalink to this heading">#</a></h2>
+<section id="step-1-plot-and-analysis-the-trend-of-cigarette-sales-per-capita-in-each-state-in-the-u-s-per-year-from-2013-2019">
+<h3>Step 1: Plot and analysis the trend of cigarette sales per capita in each state in the U.S per year from 2013-2019<a class="headerlink" href="#step-1-plot-and-analysis-the-trend-of-cigarette-sales-per-capita-in-each-state-in-the-u-s-per-year-from-2013-2019" title="Permalink to this heading">#</a></h3>
+<p>In this very first step, we want to figure out the general changing trend of cigarette sales per capita in each state in the U.S. from 2013 to 2019, in order to compare with the change in media income.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;output/sales-of-cigarette-each-state.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5b80e7ad72f8684db6a716600df12b349ad2a2934ab2dab733d263feab1b145d.png" src="_images/5b80e7ad72f8684db6a716600df12b349ad2a2934ab2dab733d263feab1b145d.png" />
+</div>
+</div>
+<p>Firstly, in order to best present the change, we decided to use line charts to show the change in cigarette sales per capita in each state from 2013 to 2019. Moreover, as the data in 2015 in the original source is missing, we then decided to skip this year.</p>
+<p>In general, from the line chart with 51 lines presenting the changing trend of cigarette sales in 51 states from 2013 to 2019, we can clearly see that the general trend of cigarette sales in each state is decreasing. Even though some states experienced fluctuation, the general trend in every state is still decreasing.</p>
+</section>
 <section id="step-2-median-income-in-each-state-per-year-from-2013-2019">
-<h2>Step 2: Median income in each state per year from 2013 - 2019<a class="headerlink" href="#step-2-median-income-in-each-state-per-year-from-2013-2019" title="Permalink to this heading">#</a></h2>
+<h3>Step 2: Median income in each state per year from 2013 - 2019<a class="headerlink" href="#step-2-median-income-in-each-state-per-year-from-2013-2019" title="Permalink to this heading">#</a></h3>
 <p>Reading in median income data which is from Source: U.S. Bureau of the Census, Current Population Survey, Annual Social and Economic Supplements. For information on confidentiality protection, sampling error, nonsampling error, and definitions, see &lt;<a class="reference external" href="http://www2.census.gov/programs-surveys/cps/techdocs/cpsmar19.pdf">www2.census.gov/programs-surveys/cps/techdocs/cpsmar19.pdf</a>&gt;.</p>
 <p>We are using 2017 Median income instead of 2017(40) because 2017(40) represents data from a new data processing system. The 2017(40) data should be used for analysis of median income after 2017, but our analysis relates mostly to before 2017.</p>
 <p>We are using 2013(38) beause 2013(39) represents data from individuals who received new income questions. These new income questions were not used in the following years, so we are disregarding this data.</p>
@@ -840,6 +879,16 @@ document.write(`
 <li><p>average median income for each state from 2013 - 2019</p></li>
 </ul>
 </section>
+<section id="step-3-regression">
+<h3>Step 3: Regression<a class="headerlink" href="#step-3-regression" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="author-contribution">
+<h2>Author Contribution<a class="headerlink" href="#author-contribution" title="Permalink to this heading">#</a></h2>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -902,9 +951,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hypothesis-whether-median-income-per-state-has-an-impact-to-sales">hypothesis: Whether median income per state has an impact to sales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-sales-in-each-state-per-year-from-2013-2019">Step 1: sales in each state per year from 2013-2019</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-median-income-in-each-state-per-year-from-2013-2019">Step 2: Median income in each state per year from 2013 - 2019</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-of-project">Introduction of Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sources">Data sources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hypothesis-whether-median-income-per-state-has-an-impact-to-sales-of-cigarette-per-capita">Hypothesis: Whether median income per state has an impact to sales of cigarette per capita</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raw-data-preprocessing">Raw Data Preprocessing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exploratory-data-analysis">Exploratory Data Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-plot-and-analysis-the-trend-of-cigarette-sales-per-capita-in-each-state-in-the-u-s-per-year-from-2013-2019">Step 1: Plot and analysis the trend of cigarette sales per capita in each state in the U.S per year from 2013-2019</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-median-income-in-each-state-per-year-from-2013-2019">Step 2: Median income in each state per year from 2013 - 2019</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-regression">Step 3: Regression</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#author-contribution">Author Contribution</a></li>
 </ul>
   </nav></div>
 
