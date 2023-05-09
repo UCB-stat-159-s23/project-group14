@@ -2,3 +2,9 @@ jupyter-book
 matplotlib
 numpy
 plotly
+scipy
+h5py
+json
+warnings
+pandas
+Ipython
