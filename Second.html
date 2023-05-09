@@ -377,38 +377,27 @@ document.write(`
 <p>In this NoteBook, we will be analyzing the relationship between sales of tobacco and median income in each state in the years 2013, 2014, 2016, 2017, 2018, and 2019. We omitted the year 2015 because the original data source U.S._Chronic_Disease_Indicators__Tobacco.csv lacks the average sales data we need for analysis. We first restructured the average sales and the median income data into our desired data frame and displayed them. We then plot 6 choropleth graphs for average sales in each state in the years of 2013 to 2019 (excluding 2015), and 7 choropleth graphs for median income in each state in the years of 2013 to 2019. We put them into the outputs folder of the project. Finally, we compared the graphs that we generated, analyze them, and drew a conclusion from the graphs.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import pandas as pd</span>
-<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
-<span class="kn">from</span> <span class="nn">project_tools.dataformat</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">project_tools.dataformat</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">project_tools.loadHTML</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># import pandas as pd</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">project_tools.dataformat</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">project_tools.loadHTML</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">project_tools.dataformat</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">project_tools.loadHTML</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 
-<span class="n">File</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">hostedtoolcache</span><span class="o">/</span><span class="n">Python</span><span class="o">/</span><span class="mf">3.9.16</span><span class="o">/</span><span class="n">x64</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.9</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">plotly</span><span class="o">/</span><span class="n">express</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">10</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">pd</span> <span class="o">=</span> <span class="n">optional_imports</span><span class="o">.</span><span class="n">get_module</span><span class="p">(</span><span class="s2">&quot;pandas&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="k">if</span> <span class="n">pd</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">---&gt; </span><span class="mi">10</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span><span class="w">         </span><span class="sd">&quot;&quot;&quot;\</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span><span class="sd"> Plotly express requires pandas to be installed.&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span>     <span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="kn">from</span> <span class="nn">._imshow</span> <span class="kn">import</span> <span class="n">imshow</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span> <span class="kn">from</span> <span class="nn">._chart_types</span> <span class="kn">import</span> <span class="p">(</span>  <span class="c1"># noqa: F401</span>
-<span class="g g-Whitespace">     </span><span class="mi">17</span>     <span class="n">scatter</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">18</span>     <span class="n">scatter_3d</span><span class="p">,</span>
-   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">51</span>     <span class="n">density_mapbox</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span> <span class="p">)</span>
+<span class="n">File</span> <span class="o">~/</span><span class="n">work</span><span class="o">/</span><span class="n">project</span><span class="o">-</span><span class="n">group14</span><span class="o">/</span><span class="n">project</span><span class="o">-</span><span class="n">group14</span><span class="o">/</span><span class="n">project_tools</span><span class="o">/</span><span class="n">dataformat</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">scipy.io</span> <span class="kn">import</span> <span class="n">wavfile</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">signal</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">interp1d</span>
 
-<span class="ne">ImportError</span>: Plotly express requires pandas to be installed.
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;scipy&#39;
 </pre></div>
 </div>
 </div>
