@@ -18,8 +18,8 @@ def tobacco_data_import(data):
     return data
 
 
-def income_data_import(data):
-	data = pd.read_csv('data/median_income.csv')
+def income_data_import():
+	median_DATA = pd.read_csv('data/median_income.csv')
 	cols_drop = median_DATA.columns[median_DATA.columns.str.contains("Standard")]
 	median_income = median_DATA.drop(columns=cols_drop).set_index("Location")
 	#drop 2017(40) and 2013(39)
