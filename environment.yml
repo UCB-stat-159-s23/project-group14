@@ -13,4 +13,5 @@ dependencies:
   - ipykernel>=5.5
   - decorator>=5.1
   - scipy>=1.8
+  - plotly
 prefix: /srv/conda/envs/projenvs
