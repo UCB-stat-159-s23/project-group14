@@ -13,8 +13,17 @@ import numpy as np
 warnings.filterwarnings('ignore')
 
 
-def tobacco_data_import(data):
-    data = pd.read_csv('data/U.S._Chronic_Disease_Indicators__Tobacco.csv', dtype='object')
+def tobacco_data_import():
+    # read avg sales data
+    data = pd.read_csv('data/U.S._Chronic_Disease_Indicators__Tobacco.csv', low_memory=False)
+    # filter question
+    data = data[data["Question"] == "Sale of cigarette packs"]
+    #fulter columns
+    data = data[['YearStart', 'LocationAbbr', 'LocationDesc', 'Question', 'DataValueUnit', 'DataValue']]
+    data = data.groupby(['YearStart', 'LocationDesc']).sum().reset_index()
+    # remove states GU, PR, US, VI since they are not actual states.
+    data = data.loc[data['DataValue'] != 0.0]
+    data.to_csv("data/states_sales.csv")
     return data
 
 
@@ -93,6 +102,5 @@ def income_data_import():
 	median_income = median_income.rename(columns={median_income.columns.tolist()[7]:'2013 Median income'})
 	return median_income
 
-def sales_data_import(data):
-	data = pd.read_csv("data/states_sales.csv", low_memory = False)
-	
+# def sales_data_import(data):
+# 	data = pd.read_csv("data/states_sales.csv", low_memory = False)
