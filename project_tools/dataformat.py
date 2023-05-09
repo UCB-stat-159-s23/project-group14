@@ -10,6 +10,7 @@ import matplotlib.mlab as mlab
 import warnings
 import pandas as pd
 import numpy as np
+from IPython.display import HTML
 warnings.filterwarnings('ignore')
 
 
@@ -104,3 +105,10 @@ def income_data_import():
 
 # def sales_data_import(data):
 # 	data = pd.read_csv("data/states_sales.csv", low_memory = False)
+
+def putHTML(year, avg_sales):
+	'''Takes in a year & whether the user wants average sales or median income data, and display the html'''
+	if avg_sales:
+		return HTML(filename = f'output/avgSales{year}.html')
+	else:
+		return HTML(filename= f'output/medianIncome{year}.html')
