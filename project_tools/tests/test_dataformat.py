@@ -1,15 +1,10 @@
 import numpy as np
-from scipy.io import wavfile
-from scipy import signal
-from scipy.interpolate import interp1d
-from scipy.signal import butter, filtfilt, iirdesign, zpk2tf, freqz
-import h5py
-import json
 import matplotlib.pyplot as plt
 import matplotlib.mlab as mlab
 import warnings
 import pandas as pd
 import numpy as np
+from IPython.display import HTML
 from project_tools import dataformat
 warnings.filterwarnings('ignore')
 
