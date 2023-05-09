@@ -23,4 +23,4 @@ def test_tobacco_data_import():
 def test_income_data_import():
     data = pd.read_csv('data/median_income.csv')
     data = dataformat.income_data_import(data)
-    assert data.shape == (52, 23)
+    assert data.shape == (51, 10)
