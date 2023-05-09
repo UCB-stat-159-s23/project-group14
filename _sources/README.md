@@ -16,7 +16,7 @@ The project_tools package is
 
 # Testing
 
-# Lisence
+# License
 Our project employs the BSD 3-Clause License.
 
 
