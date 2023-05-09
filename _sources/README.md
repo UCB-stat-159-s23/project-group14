@@ -13,12 +13,19 @@ This project is to calculate and analyze the relationship between cigeratte sale
 
 # Repository structure
 `data/:`contains two raw data files and one processed data file
+
 `output/:`contains the generated plots for EDA
+
 `project_tools/:`contains
+
 `main.ipynb:` Main Notebook for our project, contains data analysis and interpretation
+
 `sales-of-cigarette-each-state.ipynb:` contains data processing, plotting, and analyzing of the changing trend of cigarette sales in 51 different states from 2013 to 2019. 
+
 `Second.ipynb:`
+
 `Third.ipynb:`
+
 `environment.yml:`
 
 # Package Structure
