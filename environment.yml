@@ -14,5 +14,7 @@ dependencies:
   - decorator>=5.1
   - scipy>=1.8
   - plotly
+  - pandas
+  - pytest
   - pip:
-    - pip install -e project_tools
+    - -e ./project_tools
