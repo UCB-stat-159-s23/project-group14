@@ -28,12 +28,14 @@ Link to our Jupyter Book: https://ucb-stat-159-s23.github.io/project-group14/mai
 
 `MapPlot.ipynb:` contains data processing, plotting (choropleth map plots), and analyzing of both average sales and median income in 51 different states from 2013 to 2019 (2015 omitted)
 
-`Third.ipynb:`
+`LinearRegression.ipynb:` contains data processing, prediction, plotting, and analyzing the relationship between tobacco sales and average median income in specific states from 2013 to 2019 through linear regression
 
 # Package Structure
-The `project_tools` package is 
+The `project_tools` package is for reading in the tobacco sales data that was downloaded from the U.S. Chronic Disease Indicators as a data table. It then cleans the data table, so only relevant columns and rows are included. The package also reads in the average median income data that we downloaded from the U.S. Bureau of the Census, Current Population Survey, Annual Social, and Economic Supplements. We then clean the datatable, so we have only the necessary columns and add in the corresponding state's abreviation. 
 
 # Testing
+The  `test_dataformat.py` tests our functions `dataformat.py` by making sure that the data that it returns is the correct dimensions.
+
 
 # License
 Our project employs the BSD 3-Clause License.
