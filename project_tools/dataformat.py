@@ -4,7 +4,7 @@ import matplotlib.mlab as mlab
 import warnings
 import pandas as pd
 import numpy as np
-from IPython.display import HTML
+from IPython.display import display, HTML
 warnings.filterwarnings('ignore')
 
 def tobacco_data_import():
