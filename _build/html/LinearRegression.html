@@ -1,0 +1,776 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Are Cigarette Sales Related to Median Income in the US? &#8212; Group 14 Final Project Analysis of Tobacco Sales</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'LinearRegression';</script>
+    <link rel="canonical" href="/user/hjang8659//proxy/absolute/8000/LinearRegression.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Analysis of Relationship Between Sales and Income Data" href="MapPlot.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/tobacco.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/tobacco.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Group 14 Final Project Analysis of Tobacco Sales
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Analysis Notebook</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="main.html">Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sales-of-cigarette-each-state.html">Sales of cigarette packs per capita in different states per year from 2013 to 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MapPlot.html">Analysis of Relationship Between Sales and Income Data</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Are Cigarette Sales Related to Median Income in the US?</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/UCB-stat-159-s23/project-group14.git/HEAD/v2/gh/UCB-stat-159-s23/project-group14/master?urlpath=tree/docs/LinearRegression.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/UCB-stat-159-s23/project-group14" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/UCB-stat-159-s23/project-group14/issues/new?title=Issue%20on%20page%20%2FLinearRegression.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/LinearRegression.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Are Cigarette Sales Related to Median Income in the US?</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-and-processing-data">Loading and Processing Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#california">California</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#west-virginia">West Virginia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maryland">Maryland</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kentucky">Kentucky</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-hampshire">New Hampshire</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#residual-plot">Residual Plot</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concluding-thoughts">Concluding Thoughts</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="are-cigarette-sales-related-to-median-income-in-the-us">
+<h1>Are Cigarette Sales Related to Median Income in the US?<a class="headerlink" href="#are-cigarette-sales-related-to-median-income-in-the-us" title="Permalink to this headline">#</a></h1>
+<p>In this notebook we want to see if the cigarette sales per capita in the United States are related to the average median income. After analyzing the sales per capita of Cigarette across the entire U.S. We wanted to look at different states and see if the relationship betwteen cigarette sales per capita and average median income differed from that of the entire U.S. We picked the different states</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>California: we live here and there are a lot of anti-smoking laws in place
+West Virginia: one of the states with the highest cigarette sales and lowest average median incomes
+Maryland: one of the states with the highest median income
+Kentucky: one of the states with the highest cigarette sales and lowest average median incomes
+New Hampshire: one of the states with the highest cigarette sales and highest average median incomes
+</pre></div>
+</div>
+<p>We are curious to see if the states with the highest number of sales per cigarette–West Virginia, Kentucky, and New Hampshire– follow the same decreasing trend as the average median income increases. We decided to focus on states for this portion of our analysis because we the average median income for the entire United States does not hold the same value in each state. By looking at the data specific to each state, we can provide more accurate analysis of how the average median income impacts cigarette sales in certain areas of the country.</p>
+<p>For this analysis we will be omitting the median income for every state from 2015 since the U.S._Chronic_Disease_Indicators__Tobacco.csv, where our data on cigarette sales comes from, does not contain information about the year 2015.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">from</span> <span class="nn">project_tools.dataformat</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">linear_model</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="loading-and-processing-data">
+<h2>Loading and Processing Data<a class="headerlink" href="#loading-and-processing-data" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">median_income</span> <span class="o">=</span> <span class="n">income_data_import</span><span class="p">()</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">&quot;2015 Median income&quot;</span><span class="p">,</span> <span class="s2">&quot;avg_med_income&quot;</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">sales_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/states_sales.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="california">
+<h2>California<a class="headerlink" href="#california" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the median income for each year for the state, reverse order to the time in sales data</span>
+<span class="n">state_med</span> <span class="o">=</span> <span class="n">median_income</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">median_income</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="s2">&quot;CA&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="c1"># get the sales data per capita</span>
+<span class="n">sales</span> <span class="o">=</span> <span class="n">sales_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">sales_data</span><span class="o">.</span><span class="n">LocationAbbr</span> <span class="o">==</span> <span class="s2">&quot;CA&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">DataValue</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># perform simple linear regression</span>
+<span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">linregress</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="n">sales</span><span class="p">)</span>
+    <span class="c1"># calulate prediction with regression values</span>
+<span class="n">prediction</span> <span class="o">=</span> <span class="p">(</span><span class="n">slope</span> <span class="o">*</span> <span class="n">state_med</span><span class="p">)</span> <span class="o">+</span> <span class="n">intercept</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="n">sales</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#00008B&quot;</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">30</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">prediction</span><span class="p">),</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#40E0D0&quot;</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Cigarette Sales Per Capita v. Average Median Income ($) in California&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Average Median Income ($)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Cigarette Sales Per Capita&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;output/california_regression.png&quot;</span><span class="p">)</span>
+<span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.9106961988762153
+</pre></div>
+</div>
+<img alt="_images/aa43d84b6a62a3f8fa4c0d1f68ba15278d22c37462c899827c137267d0465e78.png" src="_images/aa43d84b6a62a3f8fa4c0d1f68ba15278d22c37462c899827c137267d0465e78.png" />
+</div>
+</div>
+<p>The plot above illustrates that California’s cigarette sales per capita follows the national average, it’s linearly decreasing. We note that cigarette sales and median income in California have a strong linear correlation; however this could be caused by confounding variables that we are not considering here.</p>
+</section>
+<section id="west-virginia">
+<h2>West Virginia<a class="headerlink" href="#west-virginia" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the median income for each year for the state, reverse order to the time in sales data</span>
+<span class="n">state_med</span> <span class="o">=</span> <span class="n">median_income</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">median_income</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="s2">&quot;WV&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="c1"># get the sales data per capita</span>
+<span class="n">sales</span> <span class="o">=</span> <span class="n">sales_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">sales_data</span><span class="o">.</span><span class="n">LocationAbbr</span> <span class="o">==</span> <span class="s2">&quot;WV&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">DataValue</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># perform simple linear regression</span>
+<span class="n">sl</span><span class="p">,</span> <span class="n">intrcpt</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">linregress</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="n">sales</span><span class="p">)</span>
+    <span class="c1"># calulate prediction with regression values</span>
+<span class="n">pred</span> <span class="o">=</span> <span class="p">(</span><span class="n">sl</span> <span class="o">*</span> <span class="n">state_med</span><span class="p">)</span> <span class="o">+</span> <span class="n">intrcpt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="n">sales</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#00008B&quot;</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">30</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">pred</span><span class="p">),</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#40E0D0&quot;</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Cigarette Sales Per Capita v. Average Median Income ($) in West Virginia&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Average Median Income ($)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Cigarette Sales Per Capita&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;output/west_virginia_regression.png&quot;</span><span class="p">)</span>
+
+<span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.9243716700562894
+</pre></div>
+</div>
+<img alt="_images/02e6c65749999063cdc22419ef1619113c7191580ba28dddba80230e47de4ee8.png" src="_images/02e6c65749999063cdc22419ef1619113c7191580ba28dddba80230e47de4ee8.png" />
+</div>
+</div>
+<p>This plot is very similar to California’s. We have a strong linear correlation between average median income and cigarette sales. Although West Virginia citizen’s are poorer on average than California’s, they both tend to purchase less cigarette products as the average median income increases. The linear correlation between them is a bit stronger than California, but as stated earlier this can be beause of other factors that we haven’t taken into account yet.</p>
+</section>
+<section id="maryland">
+<h2>Maryland<a class="headerlink" href="#maryland" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the median income for each year for the state, reverse order to the time in sales data</span>
+<span class="n">state_med</span> <span class="o">=</span> <span class="n">median_income</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">median_income</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="s2">&quot;MD&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="c1"># get the sales data per capita</span>
+<span class="n">sales</span> <span class="o">=</span> <span class="n">sales_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">sales_data</span><span class="o">.</span><span class="n">LocationAbbr</span> <span class="o">==</span> <span class="s2">&quot;MD&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">DataValue</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># perform simple linear regression</span>
+<span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">linregress</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="n">sales</span><span class="p">)</span>
+    <span class="c1"># calulate prediction with regression values</span>
+<span class="n">prediction</span> <span class="o">=</span> <span class="p">(</span><span class="n">slope</span> <span class="o">*</span> <span class="n">state_med</span><span class="p">)</span> <span class="o">+</span> <span class="n">intercept</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="n">sales</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#00008B&quot;</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">30</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">prediction</span><span class="p">),</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#40E0D0&quot;</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Cigarette Sales Per Capita v. Average Median Income ($) in Maryland&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Average Median Income ($)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Cigarette Sales Per Capita&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;output/maryland_regression.png&quot;</span><span class="p">)</span>
+
+<span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.9602763970167781
+</pre></div>
+</div>
+<img alt="_images/7f0ff092f7ea376b8535893e93c1761c44fd696d9dd9e7b2858783cdea73d377.png" src="_images/7f0ff092f7ea376b8535893e93c1761c44fd696d9dd9e7b2858783cdea73d377.png" />
+</div>
+</div>
+<p>Maryland’s cigarette sales per capita appears to be linearly, decreasing when average median income increases. This follows what we saw on a national level. There also appears to be a strong correlation between cigarette sales per capita and average median income (as discussed earlier this could be because of other factors that we have not taken into account). So the relationship between median income and cigarette sales appears to be stronger in Maryland, a wealthier state, when compared to California and West Virginia.</p>
+</section>
+<section id="kentucky">
+<h2>Kentucky<a class="headerlink" href="#kentucky" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the median income for each year for the state, reverse order to the time in sales data</span>
+<span class="n">state_med</span> <span class="o">=</span> <span class="n">median_income</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">median_income</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="s2">&quot;KY&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="c1"># get the sales data per capita</span>
+<span class="n">sales</span> <span class="o">=</span> <span class="n">sales_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">sales_data</span><span class="o">.</span><span class="n">LocationAbbr</span> <span class="o">==</span> <span class="s2">&quot;KY&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">DataValue</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># perform simple linear regression</span>
+<span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">linregress</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="n">sales</span><span class="p">)</span>
+ <span class="c1"># calulate prediction with regression values</span>
+<span class="n">prediction</span> <span class="o">=</span> <span class="p">(</span><span class="n">slope</span> <span class="o">*</span> <span class="n">state_med</span><span class="p">)</span> <span class="o">+</span> <span class="n">intercept</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="n">sales</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#00008B&quot;</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">30</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">prediction</span><span class="p">),</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#40E0D0&quot;</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Cigarette Sales Per Capita v. Average Median Income ($) in Kentucky&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Average Median Income ($)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Cigarette Sales Per Capita&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;output/kentucky_regression.png&quot;</span><span class="p">)</span>
+<span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.8949288982464796
+</pre></div>
+</div>
+<img alt="_images/84403714e3ed6291739b6693266b703e7be78a6811b9ee8f7b76fee766fd9318.png" src="_images/84403714e3ed6291739b6693266b703e7be78a6811b9ee8f7b76fee766fd9318.png" />
+</div>
+</div>
+<p>Kentucky’s cigarette sales per capita appears to be linearly, decreasing when average median income increases. However, the correlation between sales and median income is not as strong as the previous states. So we are going to look at the residual plots to see there are any visible patterns that may indicate that the relationship is not linear.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#residual = actual - predicted</span>
+<span class="n">resids</span> <span class="o">=</span> <span class="n">sales</span> <span class="o">-</span> <span class="n">prediction</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">sales</span><span class="p">,</span> <span class="n">prediction</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Residuals&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Cigarette sales per capita&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Kentucky Residuals&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;output/kentucky_residuals.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/57b787af27f4300dd55d6ab5dd527b1129d98454dd49b8a3fee2f4b5f69cf744.png" src="_images/57b787af27f4300dd55d6ab5dd527b1129d98454dd49b8a3fee2f4b5f69cf744.png" />
+</div>
+</div>
+<p>We can see that our that there is a clear pattern in our residual plot. This indicates that the relationship between sales per capita and median income in Kentucky do not have a linear relationship. This is in contrast with the relationship between the previous states and the U.S. Since we did not see a clear divide among the relationships of states that had lower median incomes and states that had higher median incomes we cannot provide a conclusion and require more indepth analysis</p>
+</section>
+<section id="new-hampshire">
+<h2>New Hampshire<a class="headerlink" href="#new-hampshire" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the median income for each year for the state, reverse order to the time in sales data</span>
+<span class="n">state_med</span> <span class="o">=</span> <span class="n">median_income</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">median_income</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="s2">&quot;NH&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="c1"># get the sales data per capita</span>
+<span class="n">sales</span> <span class="o">=</span> <span class="n">sales_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">sales_data</span><span class="o">.</span><span class="n">LocationAbbr</span> <span class="o">==</span> <span class="s2">&quot;NH&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">DataValue</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># perform simple linear regression</span>
+<span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">linregress</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="n">sales</span><span class="p">)</span>
+    <span class="c1"># calulate prediction with regression values</span>
+<span class="n">prediction</span> <span class="o">=</span> <span class="p">(</span><span class="n">slope</span> <span class="o">*</span> <span class="n">state_med</span><span class="p">)</span> <span class="o">+</span> <span class="n">intercept</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="n">sales</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#00008B&quot;</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">30</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">state_med</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">prediction</span><span class="p">),</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;#40E0D0&quot;</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Cigarette Sales Per Capita v. Average Median Income ($) in New Hampshire&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Average Median Income ($)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Cigarette Sales Per Capita&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;output/newHampshire_regression.png&quot;</span><span class="p">)</span>
+
+<span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.908524301607584
+</pre></div>
+</div>
+<img alt="_images/a28e5bfc9581b9eeb8380553b29e0d2a443499d4a6f19d162850c6d8e2039b41.png" src="_images/a28e5bfc9581b9eeb8380553b29e0d2a443499d4a6f19d162850c6d8e2039b41.png" />
+</div>
+</div>
+<p>We can see that the cigarette sales tend to decrease as the average median income increases. Our data points do not look like they follow a completely linear pattern, and we will plot the residuals to see if we can determine more information about the relationship between income and cigarette sales.</p>
+<section id="residual-plot">
+<h3>Residual Plot<a class="headerlink" href="#residual-plot" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#residual = actual - predicted</span>
+<span class="n">resids</span> <span class="o">=</span> <span class="n">sales</span> <span class="o">-</span> <span class="n">prediction</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">sales</span><span class="p">,</span> <span class="n">prediction</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Residuals&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Cigarette sales per capita&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;New Hampshire Residuals&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;output/new_hampshire_residuals.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/87eee7c182d9dfc2f41bea0b0ef72a3cae5981353536c673b914be8d3bb26ee8.png" src="_images/87eee7c182d9dfc2f41bea0b0ef72a3cae5981353536c673b914be8d3bb26ee8.png" />
+</div>
+</div>
+<p>We can see that there is a clear pattern that is similar to what we saw in Kentucky’s residual plot. This can lead us to believe that in certain states with high cigarette state sales per capita in comparison to the rest of the country, there is not a linear relationship between median income and cigarette sales. Whereas in other states that do no have the highest sales, there is a linear relationship between average median income and cigarette sales.</p>
+</section>
+</section>
+<section id="concluding-thoughts">
+<h2>Concluding Thoughts<a class="headerlink" href="#concluding-thoughts" title="Permalink to this headline">#</a></h2>
+<p>Looking at these states we can see that cigarette sales are decreasing throughout the country. However, in states where cigarette sales per capita consistently remain higher than the national average, there appears to be a non-linear relationship between average median income and cigarette sales. When we tried to model cigarette sales using the average median income in both New Hampshire and Kentucky through simple linear regression, we found that these variables did not have a strong linear relationship. After creating the residual plots for both of these states, we observed a similar pattern. This lets us conclude that the relationship between cigarette sales and average median income is not linear in these states.</p>
+<p>Our analysis of these 5 states do not let us come to a statistically sound conclusion. We would need to perform more regorous testing and on more states to properly draw a conclusion. From what we observed through our linear regression analysis, there is a linear relationship between cigarette sales per capita and average median income in each state, where we are seeing a decrease in cigarette sales per capita as the average median income increases,  except in states where the cigarette sales per capita are high.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="MapPlot.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Analysis of Relationship Between Sales and Income Data</p>
+      </div>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-and-processing-data">Loading and Processing Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#california">California</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#west-virginia">West Virginia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maryland">Maryland</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kentucky">Kentucky</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-hampshire">New Hampshire</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#residual-plot">Residual Plot</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concluding-thoughts">Concluding Thoughts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jiangyue Chen, Zilin Zhang, Daniel Jang, Isabel Adelhardt
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
