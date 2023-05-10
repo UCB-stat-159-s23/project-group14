@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Analysis of the relationship between cigarette sales per capita and median income by States in the US &#8212; Group 14 Final Project Analysis of Tobacco Sales</title>
   
@@ -44,7 +44,6 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
@@ -62,12 +61,13 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'main';</script>
+    <link rel="canonical" href="/user/hjang8659//proxy/absolute/8000/main.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Sales of cigarette packs per capita in different states per year from 2013 to 2019" href="sales-of-cigarette-each-state.html" />
     <link rel="prev" title="Group 14 Final Project Analysis of Tobacco Sales" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="None"/>
   </head>
   
   
@@ -156,7 +156,8 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Analysis Notebook</span></p>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sales-of-cigarette-each-state.html">Sales of cigarette packs per capita in different states per year from 2013 to 2019</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MapPlot.html">Analysis of Relationship Between Sales and Income Data</a></li>
@@ -414,15 +415,15 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="analysis-of-the-relationship-between-cigarette-sales-per-capita-and-median-income-by-states-in-the-us">
-<h1>Analysis of the relationship between cigarette sales per capita and median income by States in the US<a class="headerlink" href="#analysis-of-the-relationship-between-cigarette-sales-per-capita-and-median-income-by-states-in-the-us" title="Permalink to this heading">#</a></h1>
+<h1>Analysis of the relationship between cigarette sales per capita and median income by States in the US<a class="headerlink" href="#analysis-of-the-relationship-between-cigarette-sales-per-capita-and-median-income-by-states-in-the-us" title="Permalink to this headline">#</a></h1>
 <p>by Group 14 (Zilin Zhang, Jiangyue Chen, Daniel Jang, Isabel Adelhardt)</p>
 <section id="introduction-of-project">
-<h2>Introduction of Project<a class="headerlink" href="#introduction-of-project" title="Permalink to this heading">#</a></h2>
+<h2>Introduction of Project<a class="headerlink" href="#introduction-of-project" title="Permalink to this headline">#</a></h2>
 <p>In this project, we aim to analyze the relationship between cigarette sales per capita and median income in 51 different states in the United States from 2013 to 2019. Cigarette smoking can have a wide range of negative effects on a person’s health, and we want to figure out whether income is a major factor  affecting people’s smoking habits.</p>
 <p>In order to approach to our conclusion, we are going to calculate and plot the changing trend of cigarette sales per capita and median income in 51 different states in the U.S. from 2013 to 2019. After knowing the general trend of these two variables, we are going to calculate the regression and come out with a final conclusion.</p>
 </section>
 <section id="data-sources">
-<h2>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this heading">#</a></h2>
+<h2>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this headline">#</a></h2>
 <p>We need to collect the data of cigarette sales and median income to complete our analysis.</p>
 <ol class="arabic simple">
 <li><p>Cigarette sales’ data source: <a class="reference external" href="https://chronicdata.cdc.gov/Chronic-Disease-Indicators/U-S-Chronic-Disease-Indicators-Tobacco/rrbt-bhen">https://chronicdata.cdc.gov/Chronic-Disease-Indicators/U-S-Chronic-Disease-Indicators-Tobacco/rrbt-bhen</a></p></li>
@@ -431,7 +432,7 @@ U.S. Bureau of the Census, Current Population Survey, Annual Social and Economic
 </ol>
 </section>
 <section id="hypothesis-whether-median-income-per-state-has-an-impact-to-sales-of-cigarette-per-capita">
-<h2>Hypothesis: Whether median income per state has an impact to sales of cigarette per capita<a class="headerlink" href="#hypothesis-whether-median-income-per-state-has-an-impact-to-sales-of-cigarette-per-capita" title="Permalink to this heading">#</a></h2>
+<h2>Hypothesis: Whether median income per state has an impact to sales of cigarette per capita<a class="headerlink" href="#hypothesis-whether-median-income-per-state-has-an-impact-to-sales-of-cigarette-per-capita" title="Permalink to this headline">#</a></h2>
 <p>In order to examine our assumption, we think the following data analysis are essential:</p>
 <ol class="arabic">
 <li><p>plot and analyze the changing trend of cigarette sales per capita in each states in the U.S. from 2013 to 2019</p></li>
@@ -451,7 +452,7 @@ U.S. Bureau of the Census, Current Population Survey, Annual Social and Economic
 </div>
 </section>
 <section id="raw-data-preprocessing">
-<h2>Raw Data Preprocessing<a class="headerlink" href="#raw-data-preprocessing" title="Permalink to this heading">#</a></h2>
+<h2>Raw Data Preprocessing<a class="headerlink" href="#raw-data-preprocessing" title="Permalink to this headline">#</a></h2>
 <p>For the data we acquire from — about U.S. Chronic Disease Indicators</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -630,9 +631,9 @@ U.S. Bureau of the Census, Current Population Survey, Annual Social and Economic
 </div>
 </section>
 <section id="exploratory-data-analysis">
-<h2>Exploratory Data Analysis<a class="headerlink" href="#exploratory-data-analysis" title="Permalink to this heading">#</a></h2>
+<h2>Exploratory Data Analysis<a class="headerlink" href="#exploratory-data-analysis" title="Permalink to this headline">#</a></h2>
 <section id="step-1-plot-and-analysis-the-trend-of-cigarette-sales-per-capita-in-each-state-in-the-u-s-per-year-from-2013-2019">
-<h3>Step 1: Plot and analysis the trend of cigarette sales per capita in each state in the U.S per year from 2013-2019<a class="headerlink" href="#step-1-plot-and-analysis-the-trend-of-cigarette-sales-per-capita-in-each-state-in-the-u-s-per-year-from-2013-2019" title="Permalink to this heading">#</a></h3>
+<h3>Step 1: Plot and analysis the trend of cigarette sales per capita in each state in the U.S per year from 2013-2019<a class="headerlink" href="#step-1-plot-and-analysis-the-trend-of-cigarette-sales-per-capita-in-each-state-in-the-u-s-per-year-from-2013-2019" title="Permalink to this headline">#</a></h3>
 <p>In this very first step, we want to figure out the general changing trend of cigarette sales per capita in each state in the U.S. from 2013 to 2019, in order to compare with the change in media income.</p>
 <p>In <code class="docutils literal notranslate"><span class="pre">sales-of-cigarette-each-state.ipyny</span></code>, the notebook present detail coding of the resulting plot below.</p>
 <div class="cell docutils container">
@@ -649,7 +650,7 @@ U.S. Bureau of the Census, Current Population Survey, Annual Social and Economic
 <p>In general, from the line chart with 51 lines presenting the changing trend of cigarette sales in 51 states from 2013 to 2019, we can clearly see that the general trend of cigarette sales in each state is decreasing. Even though some states experienced fluctuation, the general trend in every state is still decreasing.</p>
 </section>
 <section id="step-2-median-income-in-each-state-per-year-from-2013-2019">
-<h3>Step 2: Median income in each state per year from 2013 - 2019<a class="headerlink" href="#step-2-median-income-in-each-state-per-year-from-2013-2019" title="Permalink to this heading">#</a></h3>
+<h3>Step 2: Median income in each state per year from 2013 - 2019<a class="headerlink" href="#step-2-median-income-in-each-state-per-year-from-2013-2019" title="Permalink to this headline">#</a></h3>
 <p>Reading in median income data which is from Source: U.S. Bureau of the Census, Current Population Survey, Annual Social and Economic Supplements. For information on confidentiality protection, sampling error, nonsampling error, and definitions, see &lt;<a class="reference external" href="http://www2.census.gov/programs-surveys/cps/techdocs/cpsmar19.pdf">www2.census.gov/programs-surveys/cps/techdocs/cpsmar19.pdf</a>&gt;.</p>
 <p>We are using 2017 Median income instead of 2017(40) because 2017(40) represents data from a new data processing system. The 2017(40) data should be used for analysis of median income after 2017, but our analysis relates mostly to before 2017.</p>
 <p>We are using 2013(38) beause 2013(39) represents data from individuals who received new income questions. These new income questions were not used in the following years, so we are disregarding this data.</p>
@@ -764,7 +765,7 @@ U.S. Bureau of the Census, Current Population Survey, Annual Social and Economic
 </div>
 </section>
 <section id="step-3-comparing-chorolepth-map-plots-for-cigaretts-sales-and-median-income">
-<h3>Step 3: Comparing Chorolepth map plots for cigaretts sales and median income<a class="headerlink" href="#step-3-comparing-chorolepth-map-plots-for-cigaretts-sales-and-median-income" title="Permalink to this heading">#</a></h3>
+<h3>Step 3: Comparing Chorolepth map plots for cigaretts sales and median income<a class="headerlink" href="#step-3-comparing-chorolepth-map-plots-for-cigaretts-sales-and-median-income" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;output/avgSales2018.html&#39;</span><span class="p">)</span>
@@ -789,7 +790,7 @@ U.S. Bureau of the Census, Current Population Survey, Annual Social and Economic
 </div>
 </section>
 <section id="step-4-regression">
-<h3>Step 4: Regression<a class="headerlink" href="#step-4-regression" title="Permalink to this heading">#</a></h3>
+<h3>Step 4: Regression<a class="headerlink" href="#step-4-regression" title="Permalink to this headline">#</a></h3>
 <p>In this step we want to see if there exists a linear relationship between average median income and tobacco sales at the state level. We chose to look at California, West Virginia, Maryland, Kentucky, and New Hampshire. We used the information from the analysis above to choose these states. We chose California because we live here, Maryland because it was one of the states with the higheset average median income, West Virginia and Kentucky because it was one of the lowest average median income amd the highest number of sales, and New Hampshire because it was one of the states with the highest median income and highest sales. We decided to run simple linear regression on the data given for these three states and we produced the following figures.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -815,13 +816,13 @@ U.S. Bureau of the Census, Current Population Survey, Annual Social and Economic
 </section>
 </section>
 <section id="conclusion">
-<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h2>
 <p>We found that the cigarette sales per capita are decreasing with time in every state. We then used the maps of cigarette sales and average median income to choose our 5 states to conduct our analysis on. Using simple linear regression, we found that California, West Virginia, and Maryland all had a linear relationship between the cigarette sales per capita and average median income. However, Kentucky and New Hampshire did show a linear relationship between these two variables. These were 2 of the states that were darkest on the maps of cigarette sales per capita. It seems that as states sell more cigarettes per capita than the national, the relationship between cigarette sales and average median income becomes less and less linear. This conclusion is based on the analaysis in this paper. We would need to explore this relationship in more states that have low cigarette sales and high. We also need to note that the linear relationship that we found in California, West Virginia, and Maryland may be linear because of confounding variables and other factors we have not accounted for in this paper. In our effort to explore the relationship between tobacco sales and average median income, we found that in most states the relationship is fairly linear where the cigarette sales per capita decreases as the average median income decreases.</p>
 </section>
 <section id="author-contribution">
-<h2>Author Contribution<a class="headerlink" href="#author-contribution" title="Permalink to this heading">#</a></h2>
+<h2>Author Contribution<a class="headerlink" href="#author-contribution" title="Permalink to this headline">#</a></h2>
 <section id="jiangyue-chen">
-<h3>- Jiangyue Chen<a class="headerlink" href="#jiangyue-chen" title="Permalink to this heading">#</a></h3>
+<h3>- Jiangyue Chen<a class="headerlink" href="#jiangyue-chen" title="Permalink to this headline">#</a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Completed the data analysis and representation of sales of cigarette in the U.S. from 2013 to 2019;
 2. Added installable packages to the repository;
 3. Selected and added the LICENSE to the project;
@@ -830,7 +831,7 @@ U.S. Bureau of the Census, Current Population Survey, Annual Social and Economic
 </div>
 </section>
 <section id="isabel-adelhardt">
-<h3>Isabel Adelhardt<a class="headerlink" href="#isabel-adelhardt" title="Permalink to this heading">#</a></h3>
+<h3>Isabel Adelhardt<a class="headerlink" href="#isabel-adelhardt" title="Permalink to this headline">#</a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Completed Regression analysis
 2. completed Makefile
 3. Conclusion
