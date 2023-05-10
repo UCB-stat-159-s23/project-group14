@@ -18,17 +18,17 @@ Link to our Jupyter Book: https://ucb-stat-159-s23.github.io/project-group14/mai
 
 `output/:`contains the generated plots for EDA
 
+`figures/:`contains png versions for html graphs generated in MapPlot.ipynb for displaying purposes
+
 `project_tools/:`contains
 
 `main.ipynb:` Main Notebook for our project, contains data analysis and interpretation
 
-`sales-of-cigarette-each-state.ipynb:` contains data processing, plotting, and analyzing of the changing trend of cigarette sales in 51 different states from 2013 to 2019. 
+`sales-of-cigarette-each-state.ipynb:` contains data processing, plotting, and analyzing of the changing trend of cigarette sales in 51 different states from 2013 to 2019
 
-`Second.ipynb:`
+`MapPlot.ipynb:` contains data processing, plotting (choropleth map plots), and analyzing of both average sales and median income in 51 different states from 2013 to 2019 (2015 omitted)
 
 `Third.ipynb:`
-
-`environment.yml:`
 
 # Package Structure
 The `project_tools` package is 
