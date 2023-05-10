@@ -18,9 +18,8 @@ envs :
 html:
 	jb build .
 
-## clean : removes audio, figure, and _build directories
+## clean : removes output and _build directories
 .PHONY : clean
 clean : 
-	rm -f audio/*
-	rm -f figures/*
+	rm -f output/*
 	rm -r _build/*

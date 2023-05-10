@@ -4,7 +4,6 @@ import matplotlib.mlab as mlab
 import warnings
 import pandas as pd
 import numpy as np
-from IPython.display import display, HTML
 warnings.filterwarnings('ignore')
 
 def tobacco_data_import():
@@ -92,10 +91,3 @@ def income_data_import():
     # median_income.columns.values[7] = '2013 Median income'
     median_income = median_income.rename(columns={median_income.columns.tolist()[7]:'2013 Median income'})
     return median_income
-
-def putHTML(year, avg_sales):
-    '''Takes in a year & whether the user wants average sales or median income data, and display the html'''
-    if avg_sales:
-        return HTML(filename = f'output/avgSales{year}.html')
-    else:
-        return HTML(filename= f'output/medianIncome{year}.html')
