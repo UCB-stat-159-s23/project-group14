@@ -7,6 +7,5 @@ root: intro.md
 chapters:
 - file: main.ipynb
 - file: sales-of-cigarette-each-state.ipynb
-- file: Second.ipynb
 - file: newSecond.ipynb
 - file: Thrid.ipynb
