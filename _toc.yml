@@ -6,7 +6,6 @@ root: intro.md
 parts:
 - caption: Analysis Notebook
   chapters:
-  - file: intro.md
   - file: main.ipynb
   - file: sales-of-cigarette-each-state.ipynb
   - file: MapPlot.ipynb
