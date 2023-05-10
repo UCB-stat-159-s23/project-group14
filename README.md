@@ -10,7 +10,7 @@ This project is to calculate and analyze the relationship between cigeratte sale
 
 # Project Website
 
-Link to our Jupyter Book: https://ucb-stat-159-s23.github.io/project-group14/main.html
+Link to our Jupyter Book: https://ucb-stat-159-s23.github.io/project-group14
 
 
 # Repository structure
