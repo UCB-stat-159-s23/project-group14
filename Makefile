@@ -8,9 +8,9 @@ SHELL = /bin/bash
 envs : 
 	source /srv/conda/etc/profile.d/conda.sh
 	conda env create -f environment.yml
-	conda activate 
+	conda activate projenv
 	conda install ipykernel
-	python -m ipykernel install --user --name maketobacco --display-name "IPython - Make"
+	python -m ipykernel install --user --name maketobacco --display-name "IPython - projenv"
 
 
 ## html : builds jupyterbook
