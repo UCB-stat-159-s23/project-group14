@@ -1,4 +1,4 @@
-## Makefile to create environment and run all notebooks
+## Makefile to create environment, run all notebooks, create jupyter book, and clean up 
 
 .ONESHELL:
 SHELL = /bin/bash
@@ -20,3 +20,18 @@ all:
 	jupyter run LinearRegression.ipynb
 	jupyter run sales-of-cigarette-each-state.ipynb
 	jupyter run main.ipynb
+
+
+## build : builds jupyter book
+.PHONY : html
+html:
+	jb build .
+	
+	
+## clean : removes outputs, figures, and _build directories
+
+.PHONY : clean
+clean :
+	rm -f figures/*
+	rm -r _build/*
+	rm -f output/*
