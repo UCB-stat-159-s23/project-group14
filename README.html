@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Analysis of the relationship between cigarette sales per capita and median income by States in the US &#8212; Group 14 Final Project Analysis of Tobacco Sales</title>
+    <title>Group 14 Final Project: Analysis of the relationship between cigarette sales per capita and median income by States in the US &#8212; Group 14 Final Project Analysis of Tobacco Sales</title>
   
   
   
@@ -64,6 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'README';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Analysis of the relationship between cigarette sales per capita and median income by States in the US" href="notebooks/main.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -129,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="#">
   
   
   
@@ -148,18 +149,18 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Group 14 Final Project Analysis of Tobacco Sales
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Group 14 Final Project: Analysis of the relationship between cigarette sales per capita and median income by States in the US
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Analysis Notebook</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exploratory Data Analysis</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="main.html">Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sales-of-cigarette-each-state.html">Sales of cigarette packs per capita in different states per year from 2013 to 2019</a></li>
-<li class="toctree-l1"><a class="reference internal" href="MapPlot.html">Analysis of Relationship Between Sales and Income Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="LinearRegression.html">Are Cigarette Sales Related to Median Income in the US?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/main.html">Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/sales-of-cigarette-each-state.html">Cigarette Sales in Packs per Capita by States per Year from 2013 to 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/MapPlot.html">Choropleth Map Plots Analysis of Relationship Between Sales and Income Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/LinearRegression.html">Are Cigarette Sales Related to Median Income in the US? (Linear Regression)</a></li>
 </ul>
 
     </div>
@@ -343,7 +344,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Analysis of the relationship between cigarette sales per capita and median income by States in the US</h1>
+    <h1>Group 14 Final Project: Analysis of the relationship between cigarette sales per capita and median income by States in the US</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -353,12 +354,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Group 14 Final Project: Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#project-overview">Project Overview</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#project-website">Project Website</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#repository-structure">Repository structure</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#package-structure">Package Structure</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#testing">Testing</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#testing">Testing</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
 </ul>
 
@@ -372,8 +376,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="analysis-of-the-relationship-between-cigarette-sales-per-capita-and-median-income-by-states-in-the-us">
-<h1>Analysis of the relationship between cigarette sales per capita and median income by States in the US<a class="headerlink" href="#analysis-of-the-relationship-between-cigarette-sales-per-capita-and-median-income-by-states-in-the-us" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="group-14-final-project-analysis-of-the-relationship-between-cigarette-sales-per-capita-and-median-income-by-states-in-the-us">
+<h1>Group 14 Final Project: Analysis of the relationship between cigarette sales per capita and median income by States in the US<a class="headerlink" href="#group-14-final-project-analysis-of-the-relationship-between-cigarette-sales-per-capita-and-median-income-by-states-in-the-us" title="Permalink to this heading">#</a></h1>
 <p>Group 14: Zilin Zhang, Jiangyue Chen, Daniel Jang, Isabel Adelhardt</p>
 <p><a class="reference external" href="https://mybinder.org/v2/gh/UCB-stat-159-s23/project-group14.git/HEAD"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
 </section>
@@ -390,7 +394,7 @@ document.write(`
 <p><code class="docutils literal notranslate"><span class="pre">data/:</span></code>contains two raw data files and one processed data file</p>
 <p><code class="docutils literal notranslate"><span class="pre">output/:</span></code>contains the generated plots for EDA</p>
 <p><code class="docutils literal notranslate"><span class="pre">figures/:</span></code>contains png versions for html graphs generated in MapPlot.ipynb for displaying purposes</p>
-<p><code class="docutils literal notranslate"><span class="pre">project_tools/:</span></code>contains</p>
+<p><code class="docutils literal notranslate"><span class="pre">project_tools/:</span></code>contains <code class="docutils literal notranslate"><span class="pre">tests/</span></code> and <code class="docutils literal notranslate"><span class="pre">dataformat.py</span></code> which are necessary files to build up our work in the analysis notebooks</p>
 <p><code class="docutils literal notranslate"><span class="pre">main.ipynb:</span></code> Main Notebook for our project, contains data analysis and interpretation</p>
 <p><code class="docutils literal notranslate"><span class="pre">sales-of-cigarette-each-state.ipynb:</span></code> contains data processing, plotting, and analyzing of the changing trend of cigarette sales in 51 different states from 2013 to 2019</p>
 <p><code class="docutils literal notranslate"><span class="pre">MapPlot.ipynb:</span></code> contains data processing, plotting (choropleth map plots), and analyzing of both average sales and median income in 51 different states from 2013 to 2019 (2015 omitted)</p>
@@ -403,10 +407,17 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="testing">
 <h1>Testing<a class="headerlink" href="#testing" title="Permalink to this heading">#</a></h1>
 <p>The  <code class="docutils literal notranslate"><span class="pre">test_dataformat.py</span></code> tests our functions <code class="docutils literal notranslate"><span class="pre">dataformat.py</span></code> by making sure that the data that it returns is the correct dimensions.</p>
+<section id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this heading">#</a></h2>
+<p>Tobacco Sales Data: <a class="reference external" href="https://chronicdata.cdc.gov/Chronic-Disease-Indicators/U-S-Chronic-Disease-Indicators-Tobacco/rrbt-bhen">https://chronicdata.cdc.gov/Chronic-Disease-Indicators/U-S-Chronic-Disease-Indicators-Tobacco/rrbt-bhen</a></p>
+<p>Median Income Data: <a class="reference external" href="https://openjustice.doj.ca.gov/data">https://openjustice.doj.ca.gov/data</a></p>
+</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="license">
 <h1>License<a class="headerlink" href="#license" title="Permalink to this heading">#</a></h1>
 <p>Our project employs the BSD 3-Clause License.</p>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -440,6 +451,15 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="right-next"
+       href="notebooks/main.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Analysis of the relationship between cigarette sales per capita and median income by States in the US</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
@@ -458,12 +478,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Group 14 Final Project: Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#project-overview">Project Overview</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#project-website">Project Website</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#repository-structure">Repository structure</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#package-structure">Package Structure</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#testing">Testing</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#testing">Testing</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
 </ul>
 
