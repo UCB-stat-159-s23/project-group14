@@ -16,5 +16,6 @@ dependencies:
   - plotly
   - pandas
   - pytest
+  - scikit-learn
   - pip:
     - -e ./project_tools
