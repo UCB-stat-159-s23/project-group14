@@ -2,11 +2,11 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro.md
+root: README.md
 parts:
-- caption: Analysis Notebook
+- caption: Exploratory Data Analysis
   chapters:
-  - file: main.ipynb
-  - file: sales-of-cigarette-each-state.ipynb
-  - file: MapPlot.ipynb
-  - file: LinearRegression.ipynb
+  - file: notebooks/main.ipynb
+  - file: notebooks/sales-of-cigarette-each-state.ipynb
+  - file: notebooks/MapPlot.ipynb
+  - file: notebooks/LinearRegression.ipynb

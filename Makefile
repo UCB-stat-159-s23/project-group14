@@ -16,10 +16,10 @@ envs :
 ## all : runs all notebooks
 .PHONY : all
 all:
-	jupyter run MapPlot.ipynb
-	jupyter run LinearRegression.ipynb
-	jupyter run sales-of-cigarette-each-state.ipynb
-	jupyter run main.ipynb
+	jupyter run notebooks/MapPlot.ipynb
+	jupyter run notebooks/LinearRegression.ipynb
+	jupyter run notebooks/sales-of-cigarette-each-state.ipynb
+	jupyter run notebooks/main.ipynb
 
 
 ## build : builds jupyter book
@@ -32,6 +32,5 @@ html:
 
 .PHONY : clean
 clean :
-	rm -f figures/*
 	rm -r _build/*
 	rm -f output/*
