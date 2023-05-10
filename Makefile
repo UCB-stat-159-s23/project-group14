@@ -1,4 +1,4 @@
-## Makefile to create environment, build JupyterBook, and clean for this repository 
+## Makefile to create environment and run all notebooks
 
 .ONESHELL:
 SHELL = /bin/bash
@@ -10,16 +10,13 @@ envs :
 	conda env create -f environment.yml
 	conda activate projenv
 	conda install ipykernel
-	python -m ipykernel install --user --name maketobacco --display-name "IPython - projenv"
+	python -m ipykernel install --user --name projenv --display-name "IPython - projenv"
 
 
-## html : builds jupyterbook
-.PHONY : html
-html:
-	jb build .
-
-## clean : removes output and _build directories
-.PHONY : clean
-clean : 
-	rm -f output/*
-	rm -r _build/*
+## all : runs all notebooks
+.PHONY : all
+all:
+	jupyter run MapPlot.ipynb
+	jupyter run LinearRegression.ipynb
+	jupyter run sales-of-cigarette-each-state.ipynb
+	jupyter run main.ipynb
