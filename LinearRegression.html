@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Are Cigarette Sales Related to Median Income in the US? &#8212; Group 14 Final Project Analysis of Tobacco Sales</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
@@ -61,12 +62,11 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'LinearRegression';</script>
-    <link rel="canonical" href="/user/hjang8659//proxy/absolute/8000/LinearRegression.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Analysis of Relationship Between Sales and Income Data" href="MapPlot.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -407,7 +407,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="are-cigarette-sales-related-to-median-income-in-the-us">
-<h1>Are Cigarette Sales Related to Median Income in the US?<a class="headerlink" href="#are-cigarette-sales-related-to-median-income-in-the-us" title="Permalink to this headline">#</a></h1>
+<h1>Are Cigarette Sales Related to Median Income in the US?<a class="headerlink" href="#are-cigarette-sales-related-to-median-income-in-the-us" title="Permalink to this heading">#</a></h1>
 <p>In this notebook we want to see if the cigarette sales per capita in the United States are related to the average median income. After analyzing the sales per capita of Cigarette across the entire U.S. We wanted to look at different states and see if the relationship betwteen cigarette sales per capita and average median income differed from that of the entire U.S. We picked the different states</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>California: we live here and there are a lot of anti-smoking laws in place
 West Virginia: one of the states with the highest cigarette sales and lowest average median incomes
@@ -433,7 +433,7 @@ New Hampshire: one of the states with the highest cigarette sales and highest av
 </div>
 </div>
 <section id="loading-and-processing-data">
-<h2>Loading and Processing Data<a class="headerlink" href="#loading-and-processing-data" title="Permalink to this headline">#</a></h2>
+<h2>Loading and Processing Data<a class="headerlink" href="#loading-and-processing-data" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">median_income</span> <span class="o">=</span> <span class="n">income_data_import</span><span class="p">()</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">&quot;2015 Median income&quot;</span><span class="p">,</span> <span class="s2">&quot;avg_med_income&quot;</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
@@ -444,7 +444,7 @@ New Hampshire: one of the states with the highest cigarette sales and highest av
 </div>
 </section>
 <section id="california">
-<h2>California<a class="headerlink" href="#california" title="Permalink to this headline">#</a></h2>
+<h2>California<a class="headerlink" href="#california" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the median income for each year for the state, reverse order to the time in sales data</span>
@@ -476,7 +476,7 @@ New Hampshire: one of the states with the highest cigarette sales and highest av
 <p>The plot above illustrates that California’s cigarette sales per capita follows the national average, it’s linearly decreasing. We note that cigarette sales and median income in California have a strong linear correlation; however this could be caused by confounding variables that we are not considering here.</p>
 </section>
 <section id="west-virginia">
-<h2>West Virginia<a class="headerlink" href="#west-virginia" title="Permalink to this headline">#</a></h2>
+<h2>West Virginia<a class="headerlink" href="#west-virginia" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the median income for each year for the state, reverse order to the time in sales data</span>
@@ -509,7 +509,7 @@ New Hampshire: one of the states with the highest cigarette sales and highest av
 <p>This plot is very similar to California’s. We have a strong linear correlation between average median income and cigarette sales. Although West Virginia citizen’s are poorer on average than California’s, they both tend to purchase less cigarette products as the average median income increases. The linear correlation between them is a bit stronger than California, but as stated earlier this can be beause of other factors that we haven’t taken into account yet.</p>
 </section>
 <section id="maryland">
-<h2>Maryland<a class="headerlink" href="#maryland" title="Permalink to this headline">#</a></h2>
+<h2>Maryland<a class="headerlink" href="#maryland" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the median income for each year for the state, reverse order to the time in sales data</span>
@@ -542,7 +542,7 @@ New Hampshire: one of the states with the highest cigarette sales and highest av
 <p>Maryland’s cigarette sales per capita appears to be linearly, decreasing when average median income increases. This follows what we saw on a national level. There also appears to be a strong correlation between cigarette sales per capita and average median income (as discussed earlier this could be because of other factors that we have not taken into account). So the relationship between median income and cigarette sales appears to be stronger in Maryland, a wealthier state, when compared to California and West Virginia.</p>
 </section>
 <section id="kentucky">
-<h2>Kentucky<a class="headerlink" href="#kentucky" title="Permalink to this headline">#</a></h2>
+<h2>Kentucky<a class="headerlink" href="#kentucky" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the median income for each year for the state, reverse order to the time in sales data</span>
@@ -592,7 +592,7 @@ New Hampshire: one of the states with the highest cigarette sales and highest av
 <p>We can see that our that there is a clear pattern in our residual plot. This indicates that the relationship between sales per capita and median income in Kentucky do not have a linear relationship. This is in contrast with the relationship between the previous states and the U.S. Since we did not see a clear divide among the relationships of states that had lower median incomes and states that had higher median incomes we cannot provide a conclusion and require more indepth analysis</p>
 </section>
 <section id="new-hampshire">
-<h2>New Hampshire<a class="headerlink" href="#new-hampshire" title="Permalink to this headline">#</a></h2>
+<h2>New Hampshire<a class="headerlink" href="#new-hampshire" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the median income for each year for the state, reverse order to the time in sales data</span>
@@ -624,7 +624,7 @@ New Hampshire: one of the states with the highest cigarette sales and highest av
 </div>
 <p>We can see that the cigarette sales tend to decrease as the average median income increases. Our data points do not look like they follow a completely linear pattern, and we will plot the residuals to see if we can determine more information about the relationship between income and cigarette sales.</p>
 <section id="residual-plot">
-<h3>Residual Plot<a class="headerlink" href="#residual-plot" title="Permalink to this headline">#</a></h3>
+<h3>Residual Plot<a class="headerlink" href="#residual-plot" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#residual = actual - predicted</span>
@@ -646,7 +646,7 @@ New Hampshire: one of the states with the highest cigarette sales and highest av
 </section>
 </section>
 <section id="concluding-thoughts">
-<h2>Concluding Thoughts<a class="headerlink" href="#concluding-thoughts" title="Permalink to this headline">#</a></h2>
+<h2>Concluding Thoughts<a class="headerlink" href="#concluding-thoughts" title="Permalink to this heading">#</a></h2>
 <p>Looking at these states we can see that cigarette sales are decreasing throughout the country. However, in states where cigarette sales per capita consistently remain higher than the national average, there appears to be a non-linear relationship between average median income and cigarette sales. When we tried to model cigarette sales using the average median income in both New Hampshire and Kentucky through simple linear regression, we found that these variables did not have a strong linear relationship. After creating the residual plots for both of these states, we observed a similar pattern. This lets us conclude that the relationship between cigarette sales and average median income is not linear in these states.</p>
 <p>Our analysis of these 5 states do not let us come to a statistically sound conclusion. We would need to perform more regorous testing and on more states to properly draw a conclusion. From what we observed through our linear regression analysis, there is a linear relationship between cigarette sales per capita and average median income in each state, where we are seeing a decrease in cigarette sales per capita as the average median income increases,  except in states where the cigarette sales per capita are high.</p>
 </section>
