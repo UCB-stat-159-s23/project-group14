@@ -7,5 +7,5 @@ root: intro.md
 chapters:
 - file: main.ipynb
 - file: sales-of-cigarette-each-state.ipynb
-- file: newSecond.ipynb
-- file: Thrid.ipynb
+- file: MapPlot.ipynb
+- file: LinearRegression.ipynb
