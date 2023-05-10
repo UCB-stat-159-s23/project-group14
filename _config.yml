@@ -21,7 +21,8 @@ bibtex_bibfiles:
   
 # The URL for BinderHub 
 launch_buttons:
-  binderhub_url: https://mybinder.org/v2/gh/UCB-stat-159-s23/project-group14.git/HEAD
+  binderhub_url: "https://mybinder.org"
+  notebook_interface: "jupyterlab"
 
 # Information about where the book exists on the web
 repository:
@@ -35,8 +36,3 @@ html:
   use_issues_button: true
   use_repository_button: true
   use_binderhub_button: true
-
-# sphinx:
-#   config:
-#     html_js_files:
-#     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
