@@ -6,7 +6,7 @@ root: README.md
 parts:
 - caption: Exploratory Data Analysis
   chapters:
-  - file: notebooks/main.ipynb
-  - file: notebooks/sales-of-cigarette-each-state.ipynb
-  - file: notebooks/MapPlot.ipynb
-  - file: notebooks/LinearRegression.ipynb
+  - file: main.ipynb
+  - file: sales-of-cigarette-each-state.ipynb
+  - file: MapPlot.ipynb
+  - file: LinearRegression.ipynb
