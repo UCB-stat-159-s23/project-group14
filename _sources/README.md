@@ -44,6 +44,11 @@ The `project_tools` package is for reading in the tobacco sales data that was do
 
 The  `test_dataformat.py` tests our functions `dataformat.py` by making sure that the data that it returns is the correct dimensions.
 
+You can run the project test suite via 
+```
+pytest project_tools
+```
+
 ## License
 
 Our project employs the BSD 3-Clause License.
