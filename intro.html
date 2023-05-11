@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Group 14 Final Project Analysis of Tobacco Sales &#8212; Group 14 Final Project Analysis of Tobacco Sales</title>
   
@@ -44,7 +44,6 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
@@ -62,10 +61,12 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <link rel="canonical" href="/user/hjang8659//proxy/absolute/8000/intro.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Analysis of the relationship between cigarette sales per capita and median income by States in the US" href="main.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="None"/>
   </head>
   
   
@@ -129,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="README.html">
+<a class="navbar-brand logo" href="#">
   
   
   
@@ -148,18 +149,18 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="README.html">
-                    Group 14 Final Project
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Group 14 Final Project Analysis of Tobacco Sales
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exploratory Data Analysis</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Analysis Notebook</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="main.html">Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sales-of-cigarette-each-state.html">Cigarette Sales in Packs per Capita by States per Year from 2013 to 2019</a></li>
-<li class="toctree-l1"><a class="reference internal" href="MapPlot.html">Choropleth Map Plots Analysis of Relationship Between Sales and Income Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="LinearRegression.html">Are Cigarette Sales Related to Median Income in the US? (Linear Regression)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sales-of-cigarette-each-state.html">Sales of cigarette packs per capita in different states per year from 2013 to 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MapPlot.html">Analysis of Relationship Between Sales and Income Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LinearRegression.html">Are Cigarette Sales Related to Median Income in the US?</a></li>
 </ul>
 
     </div>
@@ -370,16 +371,18 @@ document.write(`
                   
   <p><a class="reference external" href="https://mybinder.org/v2/gh/UCB-stat-159-s23/project-group14.git/HEAD"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
 <section id="group-14-final-project-analysis-of-tobacco-sales">
-<h1>Group 14 Final Project Analysis of Tobacco Sales<a class="headerlink" href="#group-14-final-project-analysis-of-tobacco-sales" title="Permalink to this heading">#</a></h1>
+<h1>Group 14 Final Project Analysis of Tobacco Sales<a class="headerlink" href="#group-14-final-project-analysis-of-tobacco-sales" title="Permalink to this headline">#</a></h1>
 <p>Jiangyue Chen, Zilin Zhang, Daniel Jang, Isabel Adelhardt</p>
 </section>
 <section id="project-goals">
-<h1>Project Goals<a class="headerlink" href="#project-goals" title="Permalink to this heading">#</a></h1>
+<h1>Project Goals<a class="headerlink" href="#project-goals" title="Permalink to this headline">#</a></h1>
 <p>This project is to calculate and analyze the relationship between cigeratte sales per capita and median income in 51 different states in the United States from 2013 to 2019. In order to come out with a conclusion, we analyze and present the changing trend of cigeratte sales per capita and median income in 51 states from 2013 to 2019. Afterwards, we calculate the regression between two dataset and figure out the relationship between these two variables.</p>
 </section>
 <section id="reference">
-<h1>Reference<a class="headerlink" href="#reference" title="Permalink to this heading">#</a></h1>
+<h1>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">#</a></h1>
 <p><a class="reference external" href="https://chronicdata.cdc.gov/Chronic-Disease-Indicators/U-S-Chronic-Disease-Indicators-Tobacco/rrbt-bhen">https://chronicdata.cdc.gov/Chronic-Disease-Indicators/U-S-Chronic-Disease-Indicators-Tobacco/rrbt-bhen</a></p>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -413,6 +416,15 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="right-next"
+       href="main.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Analysis of the relationship between cigarette sales per capita and median income by States in the US</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
