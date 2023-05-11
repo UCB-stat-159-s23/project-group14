@@ -17,5 +17,5 @@ dependencies:
   - pandas
   - pytest
   - scikit-learn
-  - pip:
-    - -e ./project_tools
+  # - pip:
+  #   - -e ./project_tools
