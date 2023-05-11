@@ -16,7 +16,7 @@ Our team retrieves the tobacco sales data from [US Chronic Disease Indicators](h
 
 ## Project Website
 
-Link to our Jupyter Book: https://ucb-stat-159-s23.github.io/project-group14
+Link to our Jupyter Book: [https://ucb-stat-159-s23.github.io/project-group14](https://ucb-stat-159-s23.github.io/project-group14/README.html)
 
 ## Repository structure
 
