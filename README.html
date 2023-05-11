@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'README';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Analysis of the relationship between cigarette sales per capita and median income by States in the US" href="notebooks/main.html" />
+    <link rel="next" title="Analysis of the relationship between cigarette sales per capita and median income by States in the US" href="main.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -157,10 +157,10 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exploratory Data Analysis</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="notebooks/main.html">Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/sales-of-cigarette-each-state.html">Cigarette Sales in Packs per Capita by States per Year from 2013 to 2019</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/MapPlot.html">Choropleth Map Plots Analysis of Relationship Between Sales and Income Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/LinearRegression.html">Are Cigarette Sales Related to Median Income in the US? (Linear Regression)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main.html">Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sales-of-cigarette-each-state.html">Cigarette Sales in Packs per Capita by States per Year from 2013 to 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MapPlot.html">Choropleth Map Plots Analysis of Relationship Between Sales and Income Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LinearRegression.html">Are Cigarette Sales Related to Median Income in the US? (Linear Regression)</a></li>
 </ul>
 
     </div>
@@ -356,11 +356,11 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-of-the-relationship-between-cigarette-sales-per-capita-and-median-income-by-states-in-the-us">Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-overview">Project Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-source">Data Source</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-website">Project Website</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repository-structure">Repository structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-structure">Package Structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing">Testing</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-source">Data Source</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
 </ul>
             </nav>
@@ -384,6 +384,10 @@ document.write(`
 <h2>Project Overview<a class="headerlink" href="#project-overview" title="Permalink to this heading">#</a></h2>
 <p>This project is to calculate and analyze the relationship between cigeratte sales per capita and median income in 51 different states in the United States from 2013 to 2019. In order to come out with a conclusion, we analyze and present the changing trend of cigeratte sales per capita and median income in 51 states from 2013 to 2019. Afterwards, we calculate the regression between two dataset and figure out the relationship between these two variables.</p>
 </section>
+<section id="data-source">
+<h2>Data Source<a class="headerlink" href="#data-source" title="Permalink to this heading">#</a></h2>
+<p>Our team retrieves the tobacco sales data from <a class="reference external" href="https://chronicdata.cdc.gov/Chronic-Disease-Indicators/U-S-Chronic-Disease-Indicators-Tobacco/rrbt-bhen">US Chronic Disease Indicators</a>, and the median income data from <a class="reference external" href="https://www2.census.gov/programs-surveys/cps/tables/time-series/historical-income-households/h08.xls">US Census Bureau</a>. We then converted the data into cvs files using online file type converter, and put them into the folder <code class="docutils literal notranslate"><span class="pre">data/</span></code>.</p>
+</section>
 <section id="project-website">
 <h2>Project Website<a class="headerlink" href="#project-website" title="Permalink to this heading">#</a></h2>
 <p>Link to our Jupyter Book: <a class="reference external" href="https://ucb-stat-159-s23.github.io/project-group14">https://ucb-stat-159-s23.github.io/project-group14</a></p>
@@ -406,10 +410,6 @@ document.write(`
 <section id="testing">
 <h2>Testing<a class="headerlink" href="#testing" title="Permalink to this heading">#</a></h2>
 <p>The  <code class="docutils literal notranslate"><span class="pre">test_dataformat.py</span></code> tests our functions <code class="docutils literal notranslate"><span class="pre">dataformat.py</span></code> by making sure that the data that it returns is the correct dimensions.</p>
-</section>
-<section id="data-source">
-<h2>Data Source<a class="headerlink" href="#data-source" title="Permalink to this heading">#</a></h2>
-<p>Our team retrieves the tobacco sales data from <a class="reference external" href="https://chronicdata.cdc.gov/Chronic-Disease-Indicators/U-S-Chronic-Disease-Indicators-Tobacco/rrbt-bhen">US Chronic Disease Indicators</a>, and the median income data from <a class="reference external" href="https://www2.census.gov/programs-surveys/cps/tables/time-series/historical-income-households/h08.xls">US Census Bureau</a>. We then converted the data into cvs files using online file type converter, and put them into the folder <code class="docutils literal notranslate"><span class="pre">data/</span></code>.</p>
 </section>
 <section id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this heading">#</a></h2>
@@ -451,7 +451,7 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
-       href="notebooks/main.html"
+       href="main.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
@@ -479,11 +479,11 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-of-the-relationship-between-cigarette-sales-per-capita-and-median-income-by-states-in-the-us">Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-overview">Project Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-source">Data Source</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-website">Project Website</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repository-structure">Repository structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-structure">Package Structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing">Testing</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-source">Data Source</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
 </ul>
   </nav></div>
