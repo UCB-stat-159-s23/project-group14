@@ -4,7 +4,7 @@
 
 Group 14: Zilin Zhang, Jiangyue Chen, Daniel Jang, Isabel Adelhardt
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-s23/project-group14.git/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-s23/project-group14.git/HEAD?labpath=main.ipynb)
 
 ## Project Overview
 
