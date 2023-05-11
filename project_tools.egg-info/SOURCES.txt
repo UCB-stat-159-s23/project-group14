@@ -1,9 +1,13 @@
 LICENSE
 README.md
+pyproject.toml
 setup.cfg
-setup.py
+./project_tools/__init__.py
+./project_tools/dataformat.py
+./project_tools/setup.py
 project_tools/__init__.py
 project_tools/dataformat.py
+project_tools/setup.py
 project_tools.egg-info/PKG-INFO
 project_tools.egg-info/SOURCES.txt
 project_tools.egg-info/dependency_links.txt

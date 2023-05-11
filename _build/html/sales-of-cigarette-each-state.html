@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Sales of cigarette packs per capita in different states per year from 2013 to 2019 &#8212; Group 14 Final Project Analysis of Tobacco Sales</title>
+    <title>Cigarette Sales in Packs per Capita by States per Year from 2013 to 2019 &#8212; Group 14 Final Project Analysis of Tobacco Sales</title>
   
   
   
@@ -61,10 +61,9 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'sales-of-cigarette-each-state';</script>
-    <link rel="canonical" href="/user/hjang8659//proxy/absolute/8000/sales-of-cigarette-each-state.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Analysis of Relationship Between Sales and Income Data" href="MapPlot.html" />
+    <link rel="next" title="Choropleth Map Plots Analysis of Relationship Between Sales and Income Data" href="MapPlot.html" />
     <link rel="prev" title="Analysis of the relationship between cigarette sales per capita and median income by States in the US" href="main.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -131,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="README.html">
   
   
   
@@ -151,17 +150,17 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Group 14 Final Project Analysis of Tobacco Sales
+                <a class="reference internal" href="README.html">
+                    Group 14 Final Project
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Analysis Notebook</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exploratory Data Analysis</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="main.html">Analysis of the relationship between cigarette sales per capita and median income by States in the US</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sales of cigarette packs per capita in different states per year from 2013 to 2019</a></li>
-<li class="toctree-l1"><a class="reference internal" href="MapPlot.html">Analysis of Relationship Between Sales and Income Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="LinearRegression.html">Are Cigarette Sales Related to Median Income in the US?</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Cigarette Sales in Packs per Capita by States per Year from 2013 to 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MapPlot.html">Choropleth Map Plots Analysis of Relationship Between Sales and Income Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LinearRegression.html">Are Cigarette Sales Related to Median Income in the US? (Linear Regression)</a></li>
 </ul>
 
     </div>
@@ -216,7 +215,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/UCB-stat-159-s23/project-group14.git/HEAD/v2/gh/UCB-stat-159-s23/project-group14/master?urlpath=tree/docs/sales-of-cigarette-each-state.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/UCB-stat-159-s23/project-group14/main?urlpath=lab/tree/docs/sales-of-cigarette-each-state.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onBinder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -374,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Sales of cigarette packs per capita in different states per year from 2013 to 2019</h1>
+    <h1>Cigarette Sales in Packs per Capita by States per Year from 2013 to 2019</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -388,8 +387,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="sales-of-cigarette-packs-per-capita-in-different-states-per-year-from-2013-to-2019">
-<h1>Sales of cigarette packs per capita in different states per year from 2013 to 2019<a class="headerlink" href="#sales-of-cigarette-packs-per-capita-in-different-states-per-year-from-2013-to-2019" title="Permalink to this headline">#</a></h1>
+  <section id="cigarette-sales-in-packs-per-capita-by-states-per-year-from-2013-to-2019">
+<h1>Cigarette Sales in Packs per Capita by States per Year from 2013 to 2019<a class="headerlink" href="#cigarette-sales-in-packs-per-capita-by-states-per-year-from-2013-to-2019" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -529,7 +528,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Analysis of Relationship Between Sales and Income Data</p>
+        <p class="prev-next-title">Choropleth Map Plots Analysis of Relationship Between Sales and Income Data</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
